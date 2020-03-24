@@ -2,3 +2,24 @@
  * RESET
  */
 
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-menu > li, .list-footer > li{
+    list-style: none;
+}
+
+/*
+ * HEADER
+ */
+
+
+
+/*
+ * FOOTER
+ */
