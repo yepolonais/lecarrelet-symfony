@@ -11,24 +11,35 @@
     </head>
     <body>
         {% block header %}
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <nav class="row">
-                            <div class="col-12 col-sm-2 logo"><img src="#">LOGO</div>
-                            <ul class="col-12 col-sm-10 list-menu">
-                                <li><a href="#">Évènements</a></li>
-                                <li><a href="#">Galerie</a></li>
-                                <li><a href="#">Ateliers</a></li>
-                                <li><a href="#">La carte</a></li>
-                                <li><a href="#">A propos</a></li>
-                                <li>0556010203</li>
-                                <li><a href="#">RESERVER</a></li>
-                            </ul>
-                        </nav>
-                    <div>
-                </div>
-            </div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="nav nav-pills nav-justified collapse navbar-collapse list-menu" id="navbarSupportedContent">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Évènements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Atelier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La carte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">0556010203</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Réserver</a>
+                    </li>                    
+                </ul>
+            </nav>
         {% endblock %}
 
         {% block body %}{% endblock %}
@@ -38,21 +49,21 @@
                 <div class="row">
                     <div class="col">
                         <footer class="row">
-                            <div class="col-12 col-sm-2 social-network">
+                            <div class="col-md-5 horraires">
+                                <p>Lundi 11h - 02h00</p>
+                                <p>Mardi  à Vendredi 11h - 02h00</p>
+                                <p>Samedi 11h - 02h00</p>
+                            </div>
+                            <div class="col-md-2 social-network">
                                 <a href="#"><img src="#" alt="">FACEBOOK</a>
                                 <a href="#"><img src="#" alt="">INSTA</a>
                             </div>
-                            <ul class="col-12 col-sm-5 list-footer">
+                            <ul class="col-md-5 list-footer">
                                 <li><a href="#">Plan du site</a></li>
                                 <li><a href="#">Mentions légales</a></li>
                                 <li><a href="#">CGU</a></li>
                                 <li><a href="#">Copyright</a></li>
                             </ul>
-                            <div class="col-12 col-sm-5 horraires">
-                                <p>Lundi 11h - 02h00</p>
-                                <p>Mardi  à Vendredi 11h - 02h00</p>
-                                <p>Samedi 11h - 02h00</p>
-                            </div>
                         </footer>
                     <div>
                 </div>

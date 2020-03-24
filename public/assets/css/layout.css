@@ -19,7 +19,7 @@ body{
     min-width: 320px;
 }
 
-.list-menu > li, .list-footer > li{
+.list-footer > li{
     list-style: none;
 }
 
@@ -56,38 +56,38 @@ body{
  * HEADER
  */
 
-nav > *{
-    width: 100vw;
-    text-align: center;
-}
-
  /*Media queries*/
-@media (min-width: 576px) {
+@media (max-width: 768px) {
     .list-menu{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
     }
 }
+
 
 
 
 /*
  * FOOTER
  */
-
 footer > *{
     width: 100vw;
     text-align: center;
 }
 
-@media (min-width: 576px) {
-    .list-footer, .horraires{
+@media (min-width: 768px) {
+    .horraires,.social-network,.list-footer{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+    }
+    .social-network{
+        order:1;
+    }
+    .list-footer{
+        order:2;
+    }
+    .horraires{
+        order:3;
     }
 }
