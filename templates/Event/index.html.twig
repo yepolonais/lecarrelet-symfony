@@ -1,28 +1,32 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Evènements{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/event.css') }}" />
+{% endblock %}
 
 {% block body %}
 <div class="title container-fluid d-flex flex-column justify-content-center align-items-center">
   <h1>Evènements</h1>
   <h2>Votre prochaine soirée sur Bordeaux est au Carrelet! </h2>
 </div>
-<div class="mois-annee container-fluid">
+<div class="mois-annee container-fluid sticky-top">
   <div class="row">
     <div class="col">
       <ul class="d-flex">
-        <li border><a href="#" class="align-self-center">Janvier</a></li>
-        <li border><a href="#">Février</a></li>
-        <li><a href="#">Mars</a></li>
-        <li><a href="#">Avril</a></li>
-        <li><a href="#">Mai</a></li>
-        <li><a href="#">Juin</a></li>
-        <li><a href="#">Juillet</a></li>
-        <li><a href="#">Aout</a></li>
-        <li><a href="#">Septembre</a></li>
-        <li><a href="#">Octobre</a></li>
-        <li><a href="#">Novembre</a></li>
-        <li><a href="#">Décembre</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Janvier</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Février</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Mars</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Avril</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Mai</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Juin</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Juillet</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Aout</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Septembre</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Octobre</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Novembre</a></li>
+        <li class="border align-self-center flex-fill text-center"><a href="#">Décembre</a></li>
       </ul>
     </div>
   </div>
