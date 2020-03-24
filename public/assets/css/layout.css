@@ -77,6 +77,35 @@ li, .list-menu > li, .list-footer > li{
 
 
 /*
+ *FONTS
+ */
+
+@font-face {
+    font-family: "CL_classic";
+    src: url("/fonts/ChampageLimousines.ttf");
+}@font-face {
+    font-family: "CL_bold";
+    src: url("/fonts/ChampageLimousinesBold.ttf");
+}
+@font-face {
+    font-family: "CL_italic";
+    src: url("/fonts/ChampageLimousinesItalic.ttf");
+}
+@font-face {
+    font-family: "CL_bold_italic";
+    src: url("/fonts/ChampageLimousinesBoldItalic.ttf");
+}
+@font-face {
+    font-family: "Mountecarlo";
+    src: url("/fonts/Mountecarlo.ttf");
+}
+@font-face {
+    font-family: "Thrasher";
+    src: url("/fonts/THRASHER.ttf");
+}
+
+
+/*
  * HEADER
  */
 .navbar{
@@ -147,6 +176,22 @@ li, .list-menu > li, .list-footer > li{
     #telephone-menu{
         font-size: 2rem;
         color: var(--Blanc);
+    }
+}
+
+nav > *{
+    width: 100vw;
+    text-align: center;
+}
+
+ /*Media queries*/
+@media (min-width: 576px) {
+    .list-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
