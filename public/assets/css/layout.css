@@ -81,29 +81,34 @@ li, .list-menu > li, .list-footer > li{
  */
 
 @font-face {
-    font-family: "CL_classic";
-    src: url("/fonts/ChampageLimousines.ttf");
-}@font-face {
-    font-family: "CL_bold";
-    src: url("/fonts/ChampageLimousinesBold.ttf");
-}
-@font-face {
-    font-family: "CL_italic";
-    src: url("/fonts/ChampageLimousinesItalic.ttf");
-}
-@font-face {
-    font-family: "CL_bold_italic";
-    src: url("/fonts/ChampageLimousinesBoldItalic.ttf");
-}
-@font-face {
-    font-family: "Mountecarlo";
-    src: url("/fonts/Mountecarlo.ttf");
-}
-@font-face {
-    font-family: "Thrasher";
-    src: url("/fonts/THRASHER.ttf");
+ font-family: "CL_classic";
+ src:    url({{asset('assets/css/fonts/ChampageLimousines.ttf')}}) format('ttf');
 }
 
+@font-face {
+ font-family: "CL_bold";
+ src:    url({{asset('assets/css/fonts/ChampageLimousinesBold.ttf')}}) format('ttf');
+}
+
+@font-face {
+   font-family: "CL_italic";
+   src:    url({{asset('assets/css/fonts/ChampageLimousinesItalic.ttf')}}) format('ttf');
+}
+
+@font-face {
+  font-family: "CL_bold_italic";
+  src:    url({{asset('assets/css/fonts/ChampageLimousinesBoldItalic.ttf')}}) format('ttf');
+}
+
+@font-face {
+ font-family: "Mountecarlo";
+ src:    url({{asset('assets/css/fonts/Mountecarlo.ttf')}}) format('ttf');
+}
+
+@font-face {
+ font-family: "Thrasher";
+ src:    url({{asset('assets/css/fonts/THRASHER.ttf')}}) format('ttf');
+}
 
 /*
  * HEADER

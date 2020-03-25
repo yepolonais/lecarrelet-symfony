@@ -1,0 +1,29 @@
+html{
+  /* font-size: 1vw; */
+}
+body{
+  background: black;
+}
+.titre>h1{
+  font-family: var(--Thrasher);
+  color: var(--Blanc);
+  font-size: 110px;
+  letter-spacing: 40px;
+  padding-left: 40px;
+}
+.titre>h2{
+  font-family: var(--Mountecarlo);
+  color: var(--Blanc);
+  font-size: 45px;
+}
+
+.mois-annee{
+  background: black;
+  opacity: 0.9;
+}
+
+.mois-annee a{
+  font-family: var(--CL);
+  color: var(--Jaune);
+  font-size: 30px;
+}
