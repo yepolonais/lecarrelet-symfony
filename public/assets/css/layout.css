@@ -80,24 +80,24 @@ li, .list-menu > li, .list-footer > li{
  *FONTS
  */
 
-@font-face {
- font-family: "CL_classic";
- src:    url({{asset('assets/css/fonts/ChampageLimousines.ttf')}}) format('ttf');
-}
+ @font-face {
+  font-family: "CL_classic";
+  src:    url({{asset('assets/css/fonts/Starfish.ttf')}}) format('ttf');
+ }
 
 @font-face {
  font-family: "CL_bold";
- src:    url({{asset('assets/css/fonts/ChampageLimousinesBold.ttf')}}) format('ttf');
+ src:    url({{asset('assets/css/fonts/ChampagneLimousinesBold.ttf')}}) format('ttf');
 }
 
 @font-face {
    font-family: "CL_italic";
-   src:    url({{asset('assets/css/fonts/ChampageLimousinesItalic.ttf')}}) format('ttf');
+   src:    url({{asset('assets/css/fonts/ChampagneLimousinesItalic.ttf')}}) format('ttf');
 }
 
 @font-face {
   font-family: "CL_bold_italic";
-  src:    url({{asset('assets/css/fonts/ChampageLimousinesBoldItalic.ttf')}}) format('ttf');
+  src:    url({{asset('assets/css/fonts/ChampagneLimousinesBoldItalic.ttf')}}) format('ttf');
 }
 
 @font-face {
@@ -105,13 +105,10 @@ li, .list-menu > li, .list-footer > li{
  src:    url({{asset('assets/css/fonts/Mountecarlo.ttf')}}) format('ttf');
 }
 
-@font-face {
- font-family: "Thrasher";
- src:    url({{asset('assets/css/fonts/THRASHER.ttf')}}) format('ttf');
-}
 
 /*
  * HEADER
+<<<<<<< HEAD
  */
 .navbar{
     padding: 0;
@@ -183,10 +180,15 @@ li, .list-menu > li, .list-footer > li{
         color: var(--Blanc);
     }
 }
+=======
+ /
+>>>>>>> souci police
 
-nav > *{
-    width: 100vw;
-    text-align: center;
+ /Media queries*/
+@media (max-width: 768px) {
+    .list-menu{
+        flex-direction: column;
+    }
 }
 
  /*Media queries*/
@@ -210,6 +212,7 @@ footer > *{
     text-align: center;
 }
 
+<<<<<<< HEAD
 footer *{
     color:var(--Blanc);
 }
@@ -218,6 +221,8 @@ footer *{
     width: 100px;
 }
 
+=======
+>>>>>>> souci police
 @media (min-width: 768px) {
     .horaires,.social-network,.list-footer{
         display: flex;
@@ -234,7 +239,10 @@ footer *{
     .horaires{
         order:3;
     }
+<<<<<<< HEAD
     .horaires > p{
         margin: 0;
     }
+=======
+>>>>>>> souci police
 }

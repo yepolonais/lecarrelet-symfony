@@ -1,8 +1,11 @@
 html{
-  /* font-size: 1vw; */
+  font-size: 10px;
 }
 body{
   background: black;
+}
+.titre{
+  height:420px;
 }
 .titre>h1{
   font-family: var(--Thrasher);
@@ -21,9 +24,21 @@ body{
   background: black;
   opacity: 0.9;
 }
+.mois-annee ul{
+  height: 110px;
+}
 
 .mois-annee a{
-  font-family: var(--CL);
+  font-family: var(--CL) !important;
   color: var(--Jaune);
   font-size: 30px;
+}
+
+.event-item{
+  height: 40rem;
+  width: 45%;
+  margin-bottom : 25px ;
+}
+.event-contenu{
+  width : 54rem
 }
