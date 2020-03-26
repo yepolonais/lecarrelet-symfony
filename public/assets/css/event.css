@@ -8,7 +8,7 @@ body{
   height:420px;
 }
 .titre>h1{
-  font-family:"Thrasher", arial;
+  font-family:var(--Thrasher), arial;
   color: var(--Blanc);
   font-size: 110px;
   letter-spacing: 40px;
