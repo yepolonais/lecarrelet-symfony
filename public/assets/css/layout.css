@@ -20,27 +20,28 @@
  */
 
 @font-face {
-    font-family: "CL_classic";
-    src: url("/fonts/ChampageLimousines.ttf");
-}@font-face {
-    font-family: "CL_bold";
-    src: url("/fonts/ChampageLimousinesBold.ttf");
+ font-family: "CL_classic";
+ src: url("/assets/css/fonts/ChampagneLimousines.ttf") format("truetype");
 }
+
 @font-face {
-    font-family: "CL_italic";
-    src: url("/fonts/ChampageLimousinesItalic.ttf");
+ font-family: "CL_bold";
+ src: url('/assets/css/fonts/ChampagneLimousinesBold.ttf') format("truetype");
 }
+
 @font-face {
-    font-family: "CL_bold_italic";
-    src: url("/fonts/ChampageLimousinesBoldItalic.ttf");
+   font-family: "CLitalic";
+   src: url('/assets/css/fonts/ChampagneLimousinesItalic.ttf') format("truetype");
 }
+
 @font-face {
-    font-family: "Mountecarlo";
-    src: url("/fonts/Mountecarlo.ttf");
+  font-family: "CL_bold_italic";
+  src: url('/assets/css/fonts/ChampagneLimousinesBoldItalic.ttf') format("truetype");
 }
+
 @font-face {
-    font-family: "Thrasher";
-    src: url("/fonts/THRASHER.ttf");
+ font-family: "Mountecarlo";
+ src: url("/assets/css/fonts/Mountecarlo.ttf") format("truetype");
 }
 
 
