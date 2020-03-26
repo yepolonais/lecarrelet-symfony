@@ -1,26 +1,18 @@
 /*
- * RESET
+ * Définition des variables
  */
 
-*,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a, a:hover{
-    text-decoration: none;
-}
-
-
-body{
-    min-width: 320px;
-}
-
-.list-footer > li{
-    list-style: none;
+:root{
+    --Thrasher: "Thrasher";
+    --Mountecarlo: "Mountecarlo";
+    --CL: "CL_classic";
+    --CL_bold: "CL_bold";
+    --CL_italic: "CL_italic";
+    --CL_bold_italic: "CL_bold_italic";
+    --Jaune: #FDD38F;
+    --Orange: #E9531D;
+    --Noir: #000;
+    --Blanc: #FFF;
 }
 
 /*
@@ -53,16 +45,109 @@ body{
 
 
 /*
+ * RESET
+ */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+body{
+    min-width: 320px;
+    background-color:var(--Noir);
+}
+
+li, .list-menu > li, .list-footer > li{
+    list-style-type: none;
+}
+
+
+/*
  * HEADER
  */
+.navbar{
+    padding: 0;
+    max-height: 100px;
+}
+.navbar button,
+.navbar ul{
+    height: 100%;
+
+}
+
+.logo{
+    width: 100px;
+    height: 100%;
+}
+
+.navbar-toggler-icon{
+    color: var(--Orange);
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.lien-menu, #telephone-menu{
+    display: block;
+    width: 100%;
+    font-family: var(--Mountecarlo);
+    font-weight: bold;
+    color:var(--Orange);
+}
+.lien-menu:hover{
+    color:var(--Blanc);
+}
+
+
+#reserver-menu-btn{
+    display: flex;
+    align-items: center;
+    background-color: var(--Orange);
+    border:3px solid var(--Blanc);
+}
+#reserver-menu{
+    font-family: var(--CL);
+    display: block;
+    width: 100%;
+    color:var(--Blanc);
+}
+#reserver-menu:hover{
+    color:var(--Noir);
+}
 
  /*Media queries*/
 @media (max-width: 768px) {
+    #navbarSupportedContent{
+        height: 90vh;
+    }
     .list-menu{
         flex-direction: column;
     }
+    .lien-menu{
+        font-family: var(--Thrasher);
+        font-weight: normal;
+        font-size: 2rem;
+        color:var(--Blanc);
+    }
+    #telephone-menu{
+        font-size: 2rem;
+        color: var(--Blanc);
+    }
 }
-
 
 
 
@@ -74,8 +159,13 @@ footer > *{
     text-align: center;
 }
 
+footer *{
+    color:var(--Blanc);
+}
+
+
 @media (min-width: 768px) {
-    .horraires,.social-network,.list-footer{
+    .horaires,.social-network,.list-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -87,7 +177,7 @@ footer > *{
     .list-footer{
         order:2;
     }
-    .horraires{
+    .horaires{
         order:3;
     }
 }
