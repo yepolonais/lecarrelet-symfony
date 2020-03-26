@@ -184,4 +184,7 @@ footer *{
     .horaires{
         order:3;
     }
+    .horaires > p{
+        margin: 0;
+    }    
 }
