@@ -1,21 +1,24 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Formulaire{% endblock %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/form.css') }}" />
+{% endblock %}
 {% block body %}
 
 <div class="container-fluid">
   <div class="container">
     <div class="btn-group-vertical">
-      <button type="button" class="btn btn-primary">Via Facebook</button>
-      <button type="button" class="btn btn-outline-warning">Via email</button>
-      <button type="button" class="btn btn-dark">On vous rappelle</button>
+      <button id="btn-fb" type="button" class="btn btn-primary btn-form">Via Facebook</button>
+      <button id="btn-mail" type="button" class="btn btn-outline-warning btn-form">Via email</button>
+      <button id="btn-tel" type="button" class="btn btn-dark btn-form">On vous rappelle</button>
     </div>
     <div class="rappel">
       <input type="text" name="nom" placeholder="Nom">
       <input type="text" name="prenom" placeholder="Prénom">
       <input type="number" name="telephone" placeholder="Téléphone">
-      <textarea name="demande" rows="8" cols="80" placeholder="Votre demande"></textarea>
+      <textarea name="demande" rows="1" cols="30" placeholder="Votre demande"></textarea>
       <button type="button" class="btn btn-danger">Me rappeler</button>
     </div>
     <div class="contact">
@@ -40,7 +43,7 @@
       <input type="text" name="prenom" placeholder="Prénom">
       <input type="email" name="email" placeholder="Adresse mail">
       <input type="number" name="telephone" placeholder="Téléphone">
-      <textarea name="demande" rows="8" cols="80" placeholder="Votre demande"></textarea>
+      <textarea name="demande" rows="1" cols="30" placeholder="Votre demande"></textarea>
       <button type="button" class="btn btn-danger">Réserver</button>
     </div>
     <div class="coordonnes">
