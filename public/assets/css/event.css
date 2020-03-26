@@ -1,14 +1,28 @@
+/*
+ * Layout général
+ */
+
+
 html{
   font-size: 10px;
 }
 body{
   background: black;
 }
+/*
+ * Fin layout général
+ */
+
+/*
+ * Titres
+ */
+
+
 .titre{
   height:420px;
 }
 .titre>h1{
-  font-family:var(--Thrasher), arial;
+  font-family:var(--Thrasher);
   color: var(--Blanc);
   font-size: 110px;
   letter-spacing: 40px;
@@ -20,9 +34,18 @@ body{
   font-size: 45px;
 }
 
+/*
+ * Fin titres
+ */
+
+
+/*
+ * Navbar choix mois
+ */
 .mois-annee{
   background: black;
   opacity: 0.9;
+  width: 95%;
 }
 .mois-annee ul{
   height: 110px;
@@ -30,15 +53,53 @@ body{
 
 .mois-annee a{
   font-family: var(--CL);
-  color: var(--Jaune);
-  font-size: 30px;
+  color: var(--Blanc);
+  font-size: 40px;
 }
+/*
+ * Fin navbar choix mois
+ */
 
+/*
+ * liste évènements
+ */
+.event-liste{
+  width: 95%;
+}
 .event-item{
   height: 40rem;
   width: 45%;
-  margin-bottom : 25px ;
+  margin-bottom : 25px;
 }
 .event-contenu{
-  width : 54rem
+  width: 65%;
+  padding:2em;
 }
+.event-contenu h2{
+  font-family: var(--CL);
+  color: var(--Blanc);
+  font-size: 50px;
+  height: 20%;
+}
+.event-contenu h3{
+  font-family: var(--CL_bold);
+  color: var(--Orange);
+  font-size: 35px;
+  height: 10%;
+}
+.event-texte {
+  font-family: var(--CL_bold);
+  color: var(--Blanc);
+  font-size: 20px;
+  height: 70%;
+}
+
+.event-image{
+  background-image: url('../img/event.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+}
+/*
+ * Fin liste évènements
+ */
