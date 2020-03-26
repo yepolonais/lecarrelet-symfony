@@ -133,10 +133,10 @@ li, .list-menu > li, .list-footer > li{
  /*Media queries*/
 @media (max-width: 768px) {
     #navbarSupportedContent{
-        height: 90vh;
-    }
-    .list-menu{
+        z-index: 2;
         flex-direction: column;
+        background-color: var(--Noir);
+        height: 90vh;
     }
     .lien-menu{
         font-family: var(--Thrasher);
