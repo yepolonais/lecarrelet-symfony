@@ -164,6 +164,9 @@ footer *{
     color:var(--Blanc);
 }
 
+.facebook,.instagram{
+    width: 100px;
+}
 
 @media (min-width: 768px) {
     .horaires,.social-network,.list-footer{
