@@ -108,7 +108,6 @@ li, .list-menu > li, .list-footer > li{
 
 /*
  * HEADER
-<<<<<<< HEAD
  */
 .navbar{
     padding: 0;
@@ -180,9 +179,6 @@ li, .list-menu > li, .list-footer > li{
         color: var(--Blanc);
     }
 }
-=======
- /
->>>>>>> souci police
 
  /Media queries*/
 @media (max-width: 768px) {
@@ -212,7 +208,6 @@ footer > *{
     text-align: center;
 }
 
-<<<<<<< HEAD
 footer *{
     color:var(--Blanc);
 }
@@ -221,8 +216,6 @@ footer *{
     width: 100px;
 }
 
-=======
->>>>>>> souci police
 @media (min-width: 768px) {
     .horaires,.social-network,.list-footer{
         display: flex;
@@ -239,10 +232,7 @@ footer *{
     .horaires{
         order:3;
     }
-<<<<<<< HEAD
     .horaires > p{
         margin: 0;
     }
-=======
->>>>>>> souci police
 }

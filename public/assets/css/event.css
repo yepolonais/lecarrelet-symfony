@@ -8,14 +8,14 @@ body{
   height:420px;
 }
 .titre>h1{
-  font-family: var(--Thrasher);
+  font-family:"Thrasher", arial;
   color: var(--Blanc);
   font-size: 110px;
   letter-spacing: 40px;
   padding-left: 40px;
 }
 .titre>h2{
-  font-family: var(--Mountecarlo);
+  font-family:var(--Mountecarlo);
   color: var(--Blanc);
   font-size: 45px;
 }
@@ -29,7 +29,7 @@ body{
 }
 
 .mois-annee a{
-  font-family: var(--CL) !important;
+  font-family: var(--CL);
   color: var(--Jaune);
   font-size: 30px;
 }
