@@ -1,10 +1,35 @@
 /*
+ * Reset CSS
+ */
+
+p{
+  margin-bottom: 0;
+}
+
+
+
+/*
  * Layout général
  */
 
 
 html{
-  font-size: 10px;
+  font-size: 2vw;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: var(--Noir);
+  z-index: 1;
+  height: 100px;
+}
+.footer-main{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: var(--Noir);
+  z-index: 1;
 }
 /*
  * Fin layout général
@@ -43,6 +68,9 @@ html{
   background: black;
   opacity: 0.9;
   width: 95%;
+  position: sticky;
+  top: 100px;
+
 }
 .mois-annee ul{
   height: 110px;
@@ -51,7 +79,14 @@ html{
 .mois-annee a{
   font-family: var(--CL);
   color: var(--Blanc);
-  font-size: 40px;
+  font-size: 1.3rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.2rem;
+
+  transition: border-bottom 0.3s ease-in;
+}
+.mois-annee a:hover{
+  border-bottom :2px solid var(--Blanc) ;
 }
 /*
  * Fin navbar choix mois
@@ -64,13 +99,14 @@ html{
   width: 95%;
 }
 .event-item{
-  height: 40rem;
+  height: 400px;
   width: 45%;
   margin-bottom : 25px;
+  overflow: auto;
 }
 .event-contenu{
   width: 65%;
-  padding:2em;
+  padding:10px;
 }
 .event-contenu h2{
   font-family: var(--CL);
@@ -92,11 +128,32 @@ html{
 }
 
 .event-image{
-  background-image: url('../img/event.jpg');
+  background:  url('../img/event.jpg');
   background-size: cover;
   background-position: center;
   width: 35%;
+  font-family: var(--CL_bold);
+
+
 }
+.event-filter{
+  background: rgba(0, 0, 0, 0.5);
+  padding:10px;
+}
+.event-cta{
+  width: 90%;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  color : var(--Orange);
+  font-size:1rem;
+  transition: background 0.3s ease-in, font-size 0.1s ease-in;
+}
+.event-cta:hover{
+  background: var(--Orange);
+  font-size: 1.1rem;
+  color : var(--Blanc);
+}
+
 /*
  * Fin liste évènements
  */
