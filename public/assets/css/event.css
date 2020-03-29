@@ -2,11 +2,6 @@
  * Reset CSS
  */
 
-p{
-  margin-bottom: 0;
-}
-
-
 
 /*
  * Layout général
@@ -16,7 +11,7 @@ p{
 html{
   font-size: 2vw;
 }
-.navbar{
+/* .navbar{
   position: fixed;
   width: 100%;
   top: 0;
@@ -30,7 +25,9 @@ html{
   bottom: 0;
   background: var(--Noir);
   z-index: 1;
-}
+} */
+
+
 /*
  * Fin layout général
  */
@@ -42,18 +39,22 @@ html{
 
 .titre{
   height:420px;
+  width: 95%;
 }
 .titre h1{
   font-family:var(--Thrasher);
   color: var(--Blanc);
-  font-size: 110px;
-  letter-spacing: 40px;
+  /* font-size: 110px; */
+  font-size: 4rem;
+  /* letter-spacing: 40px; */
+  letter-spacing: 2rem;
   padding-left: 40px;
 }
 .titre h2{
   font-family:var(--Mountecarlo);
   color: var(--Blanc);
-  font-size: 45px;
+  /* font-size: 45px; */
+  font-size:1.5rem;
 }
 
 /*
@@ -70,7 +71,6 @@ html{
   width: 95%;
   position: sticky;
   top: 100px;
-
 }
 .mois-annee ul{
   height: 110px;
@@ -95,9 +95,6 @@ html{
 /*
  * liste évènements
  */
-.event-liste{
-  width: 95%;
-}
 .event-item{
   height: auto;
   min-width: 350px;
@@ -105,7 +102,6 @@ html{
   margin-bottom : 25px;
 }
 .event-contenu{
-  width: 65%;
   padding:10px;
 }
 .event-contenu h2{
@@ -123,9 +119,9 @@ html{
 .event-texte {
   font-family: var(--CL_bold);
   color: var(--Blanc);
-  font-size: 20px;
-  max-height: 180px;
-  overflow: auto;
+  /* font-size: 0.7rem; */
+  font-size:20px;
+  min-height: 8rem;
 }
 
 
@@ -134,12 +130,11 @@ html{
   background:  url('../img/event.jpg');
   background-size: cover;
   background-position: center;
-  width: 35%;
   font-family: var(--CL_bold);
+  padding:0;
 }
 .event-filter{
   background: rgba(0, 0, 0, 0.5);
-  padding:10px;
 }
 .event-cta{
   width: 90%;
@@ -147,11 +142,26 @@ html{
   background: rgba(0, 0, 0, 0.7);
   color : var(--Orange);
   font-size:1rem;
+  margin-bottom: 10px;
   transition: background 0.3s ease-in, font-size 0.1s ease-in;
 }
 .event-cta:hover{
   background: var(--Orange);
   font-size: 1.1rem;
+  color : var(--Blanc);
+}
+.event-cta-mobile{
+  height: 6rem;
+  background: var(--Orange);
+}
+.event-bouton-mobile{
+  font-family: var(--CL_bold);
+  color : var(--Noir);
+  font-size:3rem;
+  letter-spacing: 1rem;
+  transition: color 0.3s ease-in;
+}
+.event-bouton-mobile:hover{
   color : var(--Blanc);
 }
 
@@ -162,3 +172,9 @@ html{
  /*
   * Responsive
   */
+
+  @media (max-width: 768px) {
+    .event-item{
+      max-width: 100%;
+    }
+}

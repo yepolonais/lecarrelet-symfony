@@ -8,7 +8,7 @@
 
 {% block body %}
 
-  <section class="titre container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+  <section class="titre container-fluid d-none d-md-flex flex-column justify-content-center align-items-center text-center">
     <div class="row">
       <div class="col">
         <h1 class="text-uppercase">évènements</h1>
@@ -42,100 +42,213 @@
     <div class="row">
       <div class="col d-flex flex-wrap justify-content-center justify-content-md-between ">
 
-        <article class="event-item border border-white d-flex justify-content-center w-100">
-          <div class="event-contenu h-100 d-flex flex-column ">
-
-            <div class="event-titre-h2 d-flex justify-content-center align-content-center">
-              <h2 class="text-center">St Valentin</h2>
-            </div>
-            <div class="event-titre-h3 d-flex justify-content-center align-content-center">
-              <h3 class="text-center">Date de l'évènement</h2>
-            </div>
-            <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
-              <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
-              <p>Un COVID partagé, un cocktail offert!!</p>
-              <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
-              <button class="event-cta border border-white d-flex justify-content-center align-items-center d-md-none">
-                <p class="text-center text-uppercase">j'y vais!</p>
-              </button>
+        <article class="event-item container border border-white">
+          <div class="row">
+            <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
+              <div class="event-titre-h2 d-flex justify-content-center align-content-center">
+                <h2 class="text-center">St Valentin</h2>
+              </div>
+              <div class="event-titre-h3 d-flex justify-content-center align-content-center">
+                <h3 class="text-center">Date de l'évènement</h2>
+              </div>
+              <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
+                <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
+                <p>Un COVID partagé, un cocktail offert!!</p>
+                <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
+              </div>
             </div>
 
+            <div class="col-md-5 event-image d-none d-md-block">
+              <div class="event-filter h-100 d-flex justify-content-center align-items-end">
+                <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                  <!-- <p class="text-center text-uppercase">réserver</p> -->
+                  réserver
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="event-image d-none d-md-block">
-            <div class="event-filter h-100 d-flex justify-content-center align-items-end">
-              <button class="event-cta border border-white d-flex justify-content-center align-items-center">
-                <p class="text-center text-uppercase">j'y vais!</p>
+
+          <div class="row">
+            <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
+              <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
+              réserver
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="event-item container border border-white">
+          <div class="row">
+            <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
+              <div class="event-titre-h2 d-flex justify-content-center align-content-center">
+                <h2 class="text-center">St Valentin</h2>
+              </div>
+              <div class="event-titre-h3 d-flex justify-content-center align-content-center">
+                <h3 class="text-center">Date de l'évènement</h2>
+              </div>
+              <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
+                <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
+                <p>Un COVID partagé, un cocktail offert!!</p>
+                <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
+              </div>
+            </div>
+
+            <div class="col-md-5 event-image d-none d-md-block">
+              <div class="event-filter h-100 d-flex justify-content-center align-items-end">
+                <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                  <!-- <p class="text-center text-uppercase">réserver</p> -->
+                  réserver
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
+              <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
+              réserver
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="event-item container border border-white">
+          <div class="row">
+            <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
+              <div class="event-titre-h2 d-flex justify-content-center align-content-center">
+                <h2 class="text-center">St Valentin</h2>
+              </div>
+              <div class="event-titre-h3 d-flex justify-content-center align-content-center">
+                <h3 class="text-center">Date de l'évènement</h2>
+              </div>
+              <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
+                <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
+                <p>Un COVID partagé, un cocktail offert!!</p>
+                <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
+              </div>
+            </div>
+
+            <div class="col-md-5 event-image d-none d-md-block">
+              <div class="event-filter h-100 d-flex justify-content-center align-items-end">
+                <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                  <!-- <p class="text-center text-uppercase">réserver</p> -->
+                  réserver
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
+              <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
+              réserver
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="event-item container border border-white">
+          <div class="row">
+            <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
+              <div class="event-titre-h2 d-flex justify-content-center align-content-center">
+                <h2 class="text-center">St Valentin</h2>
+              </div>
+              <div class="event-titre-h3 d-flex justify-content-center align-content-center">
+                <h3 class="text-center">Date de l'évènement</h2>
+              </div>
+              <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
+                <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
+                <p>Un COVID partagé, un cocktail offert!!</p>
+                <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
+              </div>
+            </div>
+
+            <div class="col-md-5 event-image d-none d-md-block">
+              <div class="event-filter h-100 d-flex justify-content-center align-items-end">
+                <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                  <!-- <p class="text-center text-uppercase">réserver</p> -->
+                  réserver
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
+              <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
+              réserver
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="event-item container border border-white">
+          <div class="row">
+            <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
+              <div class="event-titre-h2 d-flex justify-content-center align-content-center">
+                <h2 class="text-center">St Valentin</h2>
+              </div>
+              <div class="event-titre-h3 d-flex justify-content-center align-content-center">
+                <h3 class="text-center">Date de l'évènement</h2>
+              </div>
+              <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
+                <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
+                <p>Un COVID partagé, un cocktail offert!!</p>
+                <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
+              </div>
+            </div>
+
+            <div class="col-md-5 event-image d-none d-md-block">
+              <div class="event-filter h-100 d-flex justify-content-center align-items-end">
+                <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                  <!-- <p class="text-center text-uppercase">réserver</p> -->
+                  réserver
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
+              <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
+              réserver
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="event-item container border border-white">
+          <div class="row">
+            <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
+              <div class="event-titre-h2 d-flex justify-content-center align-content-center">
+                <h2 class="text-center">St Valentin</h2>
+              </div>
+              <div class="event-titre-h3 d-flex justify-content-center align-content-center">
+                <h3 class="text-center">Date de l'évènement</h2>
+              </div>
+              <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
+                <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
+                <p>Un COVID partagé, un cocktail offert!!</p>
+                <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
+              </div>
+            </div>
+
+            <div class="col-md-5 event-image d-none d-md-block">
+              <div class="event-filter h-100 d-flex justify-content-center align-items-end">
+                <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                  <!-- <p class="text-center text-uppercase">réserver</p> -->
+                  réserver
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
+              <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
+              réserver
               </button>
             </div>
           </div>
         </article>
 
-        <article class="event-item border border-white d-flex">
-          <div class="event-contenu d-flex flex-column h-100">
-            <div class="event-titre-h2 d-flex justify-content-center align-content-center">
-              <h2 class="text-center">St Valentin</h2>
-            </div>
-            <div class="event-titre-h3 d-flex justify-content-center align-content-center">
-              <h3 class="text-center">Date de l'évènement</h2>
-            </div>
-            <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
-              <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
-              <p>Un COVID partagé, un cocktail offert!!</p>
-              <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
-            </div>
-          </div>
-          <div class="event-image">
-            <div class="event-filter h-100 d-flex justify-content-center align-items-end">
-              <button class="event-cta border border-white d-flex justify-content-center align-items-center">
-                <p class="text-center text-uppercase">j'y vais!</p>
-              </button>
-            </div>
-          </div>
-        </article>
-        <article class="event-item border border-white d-flex">
-          <div class="event-contenu d-flex flex-column h-100">
-            <div class="event-titre-h2 d-flex justify-content-center align-content-center">
-              <h2 class="text-center">St Valentin</h2>
-            </div>
-            <div class="event-titre-h3 d-flex justify-content-center align-content-center">
-              <h3 class="text-center">Date de l'évènement</h2>
-            </div>
-            <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
-              <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
-              <p>Un COVID partagé, un cocktail offert!!</p>
-              <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
-            </div>
-          </div>
-          <div class="event-image">
-            <div class="event-filter h-100 d-flex justify-content-center align-items-end">
-              <button class="event-cta border border-white d-flex justify-content-center align-items-center">
-                <p class="text-center text-uppercase">j'y vais!</p>
-              </button>
-            </div>
-          </div>
-        </article>
-        <article class="event-item border border-white d-flex">
-          <div class="event-contenu d-flex flex-column h-100">
-            <div class="event-titre-h2 d-flex justify-content-center align-content-center">
-              <h2 class="text-center">St Valentin</h2>
-            </div>
-            <div class="event-titre-h3 d-flex justify-content-center align-content-center">
-              <h3 class="text-center">Date de l'évènement</h2>
-            </div>
-            <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
-              <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
-              <p>Un COVID partagé, un cocktail offert!!</p>
-              <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
-            </div>
-          </div>
-          <div class="event-image">
-            <div class="event-filter h-100 d-flex justify-content-center align-items-end">
-              <button class="event-cta border border-white d-flex justify-content-center align-items-center">
-                <p class="text-center text-uppercase">j'y vais!</p>
-              </button>
-            </div>
-          </div>
-        </article>
+
+
 
       </div>
     </div>
@@ -143,6 +256,10 @@
 
 
 
+  </section>
+
+  <section class="container-fluid h-25">
+    <!-- Utile pour éviter que le footer ne recouvre les derniers events -->
   </section>
 
 {% endblock %}
