@@ -1,12 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Formulaire{% endblock %}
+{% block title %}A propos{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('assets/css/form.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/apropos.css') }}" />
 {% endblock %}
 {% block body %}
-
 <div class="container-fluid">
   <div class="container">
     <div class="bloc-formulaire">
@@ -151,5 +150,5 @@
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('assets/js/form.js') }}"></script>
+    <script src="{{ asset('assets/js/apropos.js') }}"></script>
 {% endblock %}
