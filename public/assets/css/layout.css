@@ -44,6 +44,10 @@
  src: url("/assets/css/fonts/Mountecarlo.ttf") format("truetype");
 }
 
+@font-face {
+ font-family: "Thrasher";
+ src: url("/assets/css/fonts/THRASHER.ttf") format("truetype");
+}
 
 /*
  * RESET
@@ -169,6 +173,13 @@ footer *{
 }
 
 @media (min-width: 768px) {
+    footer{
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+    }
     .horaires,.social-network,.list-footer{
         display: flex;
         flex-direction: row;
