@@ -44,6 +44,10 @@
  src: url("/assets/css/fonts/Mountecarlo.ttf") format("truetype");
 }
 
+@font-face {
+ font-family: "Thrasher";
+ src: url("/assets/css/fonts/THRASHER.ttf") format("truetype");
+}
 
 /*
  * RESET
@@ -75,40 +79,6 @@ li, .list-menu > li, .list-footer > li{
     list-style-type: none;
 }
 
-
-/*
- *FONTS
- */
-
- @font-face {
-  font-family: "CL_classic";
-  src:    url({{asset('assets/css/fonts/Starfish.ttf')}}) format('ttf');
- }
-
-@font-face {
- font-family: "CL_bold";
- src:    url({{asset('assets/css/fonts/ChampagneLimousinesBold.ttf')}}) format('ttf');
-}
-
-@font-face {
-   font-family: "CL_italic";
-   src:    url({{asset('assets/css/fonts/ChampagneLimousinesItalic.ttf')}}) format('ttf');
-}
-
-@font-face {
-  font-family: "CL_bold_italic";
-  src:    url({{asset('assets/css/fonts/ChampagneLimousinesBoldItalic.ttf')}}) format('ttf');
-}
-
-@font-face {
- font-family: "Mountecarlo";
- src:    url({{asset('assets/css/fonts/Mountecarlo.ttf')}}) format('ttf');
-}
-
-@font-face {
- font-family: "Thrasher";
- src: url("/assets/css/fonts/Thrasher.ttf") format("truetype");
-}
 
 /*
  * HEADER
@@ -184,24 +154,6 @@ li, .list-menu > li, .list-footer > li{
     }
 }
 
- /Media queries*/
-@media (max-width: 768px) {
-    .list-menu{
-        flex-direction: column;
-    }
-}
-
- /*Media queries*/
-@media (min-width: 576px) {
-    .list-menu{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
 
 
 /*
@@ -221,6 +173,13 @@ footer *{
 }
 
 @media (min-width: 768px) {
+    footer{
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+    }
     .horaires,.social-network,.list-footer{
         display: flex;
         flex-direction: row;

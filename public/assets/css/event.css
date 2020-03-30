@@ -11,7 +11,7 @@
 html{
   font-size: 2vw;
 }
-/* .navbar{
+.navbar{
   position: fixed;
   width: 100%;
   top: 0;
@@ -25,7 +25,7 @@ html{
   bottom: 0;
   background: var(--Noir);
   z-index: 1;
-} */
+}
 
 
 /*
@@ -45,7 +45,7 @@ html{
   font-family:var(--Thrasher);
   color: var(--Blanc);
   /* font-size: 110px; */
-  font-size: 4rem;
+  font-size: 3.5rem;
   /* letter-spacing: 40px; */
   letter-spacing: 2rem;
   padding-left: 40px;
@@ -65,18 +65,18 @@ html{
 /*
  * Navbar choix mois
  */
-.mois-annee{
+.event-mois{
   background: black;
   opacity: 0.9;
   width: 95%;
   position: sticky;
   top: 100px;
 }
-.mois-annee ul{
+.event-mois ul{
   height: 110px;
 }
 
-.mois-annee a{
+.event-mois a{
   font-family: var(--CL);
   color: var(--Blanc);
   font-size: 1.3rem;
@@ -85,9 +85,20 @@ html{
 
   transition: border-bottom 0.3s ease-in;
 }
-.mois-annee a:hover{
+.event-mois a:hover{
   border-bottom :2px solid var(--Blanc) ;
 }
+
+.event-mois-mobile{
+  height: 180px;
+}
+.event-select-mobile{
+  height: 40px;
+  font-family: var(--CL);
+  font-size: 30px;
+  color:var(--Noir);
+}
+
 /*
  * Fin navbar choix mois
  */
