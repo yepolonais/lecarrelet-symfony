@@ -8,6 +8,12 @@
 /*
  * GENERAL
  */
+ h1{
+    color: white;
+    font-family: var(--Mountecarlo);
+    font-size: 3em;
+    margin: 20px 0 0 20px;
+ }
   h2,h3{
     color: white;
     display: none;
@@ -123,6 +129,9 @@ label{
  */
 @media screen and (min-width: 768px) {
 
+  h1{
+    display: none;
+  }
   h2, h3{
     display: inherit;
   }
