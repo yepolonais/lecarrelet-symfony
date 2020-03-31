@@ -44,6 +44,14 @@
  src: url("/assets/css/fonts/Mountecarlo.ttf") format("truetype");
 }
 
+<<<<<<< HEAD
+=======
+@font-face {
+ font-family: "Thrasher";
+ src: url("/assets/css/fonts/THRASHER.ttf") format("truetype");
+}
+
+>>>>>>> cc918cd06439f7875a37aee34862ceae2ddbcd47
 
 /*
  * RESET
