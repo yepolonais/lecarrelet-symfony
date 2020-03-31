@@ -54,6 +54,8 @@
  */
 
 *,
+.row,
+.container-fluid,
 *:before,
 *:after {
     margin: 0;
@@ -110,6 +112,7 @@ li, .list-menu > li, .list-footer > li{
     display: block;
     width: 100%;
     font-family: var(--Mountecarlo);
+    font-size: 1.5rem;
     font-weight: bold;
     color:var(--Orange);
 }
@@ -159,17 +162,16 @@ li, .list-menu > li, .list-footer > li{
 /*
  * FOOTER
  */
-footer > *{
-    width: 100vw;
-    text-align: center;
-}
+
 
 footer *{
     color:var(--Blanc);
+    text-align: center;
 }
 
 .facebook,.instagram{
-    width: 100px;
+    width: 80px;
+    padding: 10px;
 }
 
 @media (min-width: 768px) {
@@ -179,12 +181,18 @@ footer *{
         bottom: 0;
         left: 0;
         display: flex;
+        margin: 0;
+        z-index: 10;
+
     }
+
     .horaires,.social-network,.list-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        padding: 0;
+        margin: 0;
     }
     .social-network{
         order:1;

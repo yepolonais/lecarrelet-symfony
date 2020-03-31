@@ -20,10 +20,15 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#divLogo,#divInfo,#blockAdresse,#divSecondeLigne{
+#divLogo,#divInfo,#blockAdresse{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#divSecondeLigne{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 #divLogo > svg{
     max-width: 200px;
@@ -32,9 +37,15 @@ body{
 
 #divInfo,#blockAdresse{
     flex-direction: column;
+    font-family: var(--CL_bold);
+
 }
 #blockAdresse{
-    
+    margin-bottom: 100px;
+}
+
+#blockAdresse p{
+    margin:0;
 }
 .boutonAccueil{
     display: none;
@@ -43,40 +54,122 @@ body{
 .infos,.boutonAccueil{
     color: var(--Blanc);
 }
+#ligneFlecheAccueil{
+    display: none;
+}
+#blockVideoAccueil{
+    display: none;
+}
 
 @media (min-width: 768px) {
     body{
-        background-image: url(../img/desktopIndex.jpg);
+        overflow: hidden;
     }
-    #divLogo{
-
+    #containerIndex{
+        margin-top: 2%;
+    }
+    .list-menu{
+        min-height: 80px;
+    }
+    #reserver-menu-btn,.navbar-brand{
+        display: none;
+    }
+    body{
+        background-image: url(../img/desktopIndex.jpg);
     }
 
     #divLogo > svg{
         max-width: 400px;
     }
 
-    #divInfo,#blockAdresse{
-
-    }
-
     #blockAdresse{
-        
-    }
-
-    .infos{
+    margin-bottom: 0;
     }
 
     .boutonAccueil{
+        font-family: var(--CL_bold);
+        font-size: 2rem;
         max-width: 300px;
-        margin-top: 100px;
         text-align: center;
         display: block;
         border: var(--Orange) 3px solid;
         text-align: center;
         color:var(--Orange);
-        margin-top: 100px;
         padding: 25px;
         background-color: var(--Noir);
     }
+
+    .boutonAccueil:hover{
+        color: var(--Blanc);
+    }
+
+    #ligneCallToScrollAccueil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .callToScroll {
+        height: 34px;
+        width: 20px;
+        border: 1px var(--Blanc) solid;
+        border-radius: 11px;
+    }
+
+    .callToScroll:after {
+        content: '';
+        display: block;
+        height: 6px;
+        width: 6px;
+        background-color: var(--Orange);
+        border-radius: 100%;
+        margin: 2px auto;
+        opacity: 0;
+        animation: animateScroll 1.25s infinite;
+        will-change: transform;
+    }
+
+    @keyframes animateScroll {
+        10% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(24px);
+            opacity: 0;
+        }
+    }
+
+    #blockVideoAccueil{
+        position: absolute;
+        padding: 2%;
+        top: 100%;
+        left: 0;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--Noir);
+    }
+    #blockVideoAccueil h1,
+    #blockVideoAccueil h2{
+        color: var(--Blanc);
+    }
+    #titreH1Accueil{
+        font-family: var(--Thrasher);
+    }
+
+    #titreH2Accueil{
+        font-family: var(--Mountecarlo);
+    }
+    
+    #videoAccueil{
+        width: 50%;
+        height: 55%;
+        border: 2px solid #5e86fc;
+        box-shadow: 0px 0px 5px 3px #5e86fc;
+    }
+
 }
