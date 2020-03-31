@@ -1,0 +1,212 @@
+/*
+ * Variables couleurs
+ */
+:root{
+    --Bleue: #3A5893;
+}
+
+/*
+ * GENERAL
+ */
+ h1{
+    color: white;
+    font-family: var(--Mountecarlo);
+    font-size: 3em;
+    margin: 20px 0 0 20px;
+ }
+  h2,h3{
+    color: white;
+    display: none;
+  }
+ h2{
+   font-size: 73px;
+   font-family: var(--Thrasher);
+ }
+ h3{
+   font-size: 2em;
+   font-family: var(--Mountecarlo);
+ }
+
+.coordonnes, .coordonnes a, p{
+  color: white;
+}
+
+.btn
+{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.boutons{
+  margin: 40px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ *  3 boutons principaux
+ */
+
+#btn-fb{
+  background-color: var(--Bleue);
+  border: 2px solid white;
+}
+#btn-mail, .confirmation{
+  background-color: var(--Orange);
+  border: 2px solid white;
+  color: white;
+}
+#btn-tel{
+  background-color: var(--Noir);
+  border: 2px solid white;
+}
+
+/*
+ * Blocs cachés qui coulissent avec le jquery
+ */
+
+.rappel, .contact{
+  margin: 40px auto 20px auto;
+  position: absolute;
+  right: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact *, .rappel *{
+  margin: 10px auto 10px auto;
+  text-align: center;
+}
+
+#contact-datepicker
+{
+  width: 50%;
+}
+label{
+  color: white;
+}
+
+.bouton{
+  width: 80%;
+}
+
+/*
+ * coordonnes
+ */
+
+.adress{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-tel, .icon-adress{
+    padding-right: 60px;
+}
+
+.map iframe{
+  width: 100%;
+  border: 1px solid white;
+}
+
+.bloc-bas{
+  display: none;
+}
+.fa-star, .fa-star-half{
+  color: #ED8A19;
+  padding-left: 10px;
+  line-height: inherit !important;
+}
+
+.retour{
+  color: white;
+  margin-right: 20px;
+  font-size: 3em;
+  opacity: 0;
+}
+
+/*
+ * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
+ */
+@media screen and (min-width: 768px) {
+
+  h1{
+    display: none;
+  }
+  h2, h3{
+    display: inherit;
+  }
+
+  .bloc-formulaire{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc-gauche{
+    width: 50%;
+    padding: 0 40px 10px 10px;
+    background-image: url(images/_2041960.jpg);
+    background-size: cover;
+  }
+
+  .bloc-haut, .bloc-bas{
+    padding: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bloc-haut{
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  .bloc-bas{
+    padding: 20px 0 20px 0;
+  }
+  .google{
+    font-size: 1.5em;
+    display: flex;
+    padding: 5px 0;
+  }
+
+
+  .coordonnes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    border: 1px solid white;
+    padding: 40px 40px 10px 40px;
+
+  }
+
+  .boutons{
+  }
+
+  .boutons button{
+    margin-bottom: 40px;
+  }
+
+
+  .map, .telephone, .adress{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .telephone, .adress{
+    display: flex;
+    justify-content: center;
+  }
+
+  .map iframe{
+    height: 400px;
+  }
+
+  .titre{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
