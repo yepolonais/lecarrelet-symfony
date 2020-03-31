@@ -1,0 +1,231 @@
+/*
+ * Variables couleurs
+ */
+:root{
+    --Bleue: #3A5893;
+}
+
+/*
+ * GENERAL
+ */
+ h1{
+    color: white;
+    font-family: var(--Mountecarlo);
+    font-size: 3em;
+ }
+  h2,h3{
+    color: white;
+    /* display: none; */
+  }
+ h2{
+   font-size: 73px;
+   font-family: var(--Thrasher);
+ }
+ h3{
+   font-size: 1em;
+   font-family: var(--Mountecarlo);
+ }
+p{
+  margin-bottom: 0;
+}
+ #titre-desktop{
+   display: none;
+ }
+
+.coordonnes, .coordonnes a, p{
+  color: white;
+}
+
+.btn
+{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.image img{
+  width: 100%;
+  margin: 20px auto 3px auto;
+}
+
+.bloc-rs, .paragraphe{
+  text-align: center;
+}
+.bloc-rs h3{
+  padding-top: 10px;
+  font-size: 2em;
+}
+
+/*
+ * coordonnes
+ */
+
+.adress{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-tel, .icon-adress{
+    padding-right: 60px;
+}
+
+.map iframe{
+  width: 100%;
+  border: 1px solid white;
+}
+
+.bloc-haut{
+  text-align: center;
+}
+.bloc-haut h3{
+  padding-bottom: 3px;
+  border-bottom: 1px solid white;
+}
+
+.bloc-bas{
+  display: none;
+}
+.fa-star, .fa-star-half{
+  color: #ED8A19;
+  padding-left: 10px;
+  line-height: inherit !important;
+}
+
+.retour{
+  color: white;
+  margin-right: 20px;
+  font-size: 3em;
+  opacity: 0;
+}
+
+.google{
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.adress{
+    display: flex;
+    align-items: center;
+}
+
+.reseaux-Soc, .google, .telephone, .adress{
+  padding: 10px 0;
+}
+
+.reserver{
+  margin: 10px 0 10px 0;
+  background-color: var(--Orange);
+  border: 2px solid white;
+  color: white;
+}
+
+/*
+ * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
+ */
+@media screen and (min-width: 768px) {
+  body{
+    height: 100vh;
+  }
+  h1{
+    display: none;
+  }
+  h2, h3{
+    display: inherit;
+  }
+
+  .bloc-formulaire{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc-gauche{
+        width: 50%;
+        padding: 0 40px 0 10px;
+        background-image: url(images/_2041961.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse;
+  }
+
+  .bloc-haut, .bloc-bas{
+    padding: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bloc-haut h3{
+    font-size: 2em;
+  }
+  .bloc-haut{
+    background-color: rgba(0,0,0,.8);
+  }
+  .bloc-bas{
+    padding: 20px 0 20px 0;
+  }
+  .google{
+    font-size: 1.5em;
+    display: flex;
+    padding: 5px 0;
+  }
+
+
+  .coordonnes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    border: 1px solid white;
+    padding: 40px 40px 10px 40px;
+
+  }
+
+  .boutons{
+  }
+
+  .fa-cocktail::before{
+    color: white;
+    width: 100%;
+  }
+
+  .boutons button{
+    margin-bottom: 40px;
+  }
+
+
+  .map, .telephone, .adress{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .telephone, .adress{
+    display: flex;
+    justify-content: center;
+  }
+
+  .map iframe{
+    height: 400px;
+  }
+
+  .titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+  #titre-desktop{
+    display: flex;
+  }
+
+  .image{
+    display: none;
+  }
+
+  .bloc-rs{
+    display: none;
+  }
+}
