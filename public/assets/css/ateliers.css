@@ -8,13 +8,16 @@
 /*
  * GENERAL
  */
+ body{
+   color: white;
+ }
  h1{
-    color: white;
+    /* color: white; */
     font-family: var(--Mountecarlo);
     font-size: 3em;
  }
   h2,h3{
-    color: white;
+    /* color: white; */
     /* display: none; */
   }
  h2{
@@ -22,19 +25,23 @@
    font-family: var(--Thrasher);
  }
  h3{
-   font-size: 1em;
-   font-family: var(--Mountecarlo);
+   padding-top: 20px;
+   font-size: 2em;
+   color: var(--Orange);
+   font-family: var(--CL_bold);
  }
 p{
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
  #titre-desktop{
    display: none;
  }
-
-.coordonnes, .coordonnes a, p{
-  color: white;
-}
+ .titre{
+    text-align: center;
+ }
+ .titre-desktop{
+   display: none;
+ }
 
 .btn
 {
@@ -47,78 +54,38 @@ p{
   margin: 20px auto 3px auto;
 }
 
-.bloc-rs, .paragraphe{
-  text-align: center;
-}
-.bloc-rs h3{
-  padding-top: 10px;
-  font-size: 2em;
-}
-
-/*
- * coordonnes
- */
-
-.adress{
-  display: flex;
-  flex-direction: row;
-}
-
-.icon-tel, .icon-adress{
-    padding-right: 60px;
-}
-
-.map iframe{
-  width: 100%;
-  border: 1px solid white;
-}
-
 .bloc-haut{
   text-align: center;
 }
 .bloc-haut h3{
   padding-bottom: 3px;
-  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
-.bloc-bas{
+.fa-cocktail, .fa-glass-cheers, .fa-handshake{
+  font-size: 73px;
+  padding: 10px 0 10px 0;
+}
+
+.afterwork,.teambuilding,.seminaire{
+  /* color: white; */
+}
+
+.titre-text h3{
   display: none;
 }
-.fa-star, .fa-star-half{
-  color: #ED8A19;
-  padding-left: 10px;
-  line-height: inherit !important;
-}
 
-.retour{
-  color: white;
-  margin-right: 20px;
-  font-size: 3em;
-  opacity: 0;
-}
-
-.google{
-  font-size: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.adress{
-    display: flex;
-    align-items: center;
-}
-
-.reseaux-Soc, .google, .telephone, .adress{
-  padding: 10px 0;
-}
 
 .reserver{
   margin: 10px 0 10px 0;
   background-color: var(--Orange);
   border: 2px solid white;
   color: white;
+}
+
+.light-mode{
+  color: black;
+  background-color: white;
 }
 
 /*
@@ -142,14 +109,9 @@ p{
 
   .bloc-gauche{
         width: 50%;
-        padding: 0 40px 0 10px;
-        background-image: url(images/_2041961.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column-reverse;
   }
 
-  .bloc-haut, .bloc-bas{
+  .bloc-haut{
     padding: 10px;
     border: 1px solid white;
     display: flex;
@@ -160,37 +122,30 @@ p{
   .bloc-haut h3{
     font-size: 2em;
   }
+
+  .titre-text h3{
+    display: inherit;
+  }
+  .teambuilding > h3, .afterwork > h3, .seminaire > h3{
+    display: none;
+  }
+
   .bloc-haut{
     background-color: rgba(0,0,0,.8);
   }
-  .bloc-bas{
-    padding: 20px 0 20px 0;
-  }
-  .google{
-    font-size: 1.5em;
-    display: flex;
-    padding: 5px 0;
-  }
 
-
-  .coordonnes{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5em;
-    border: 1px solid white;
-    padding: 40px 40px 10px 40px;
-
-  }
-
-  .boutons{
-  }
-
-  .fa-cocktail::before{
-    color: white;
-    width: 100%;
-  }
+.afterwork, .seminaire{
+  /* color: white; */
+  display: flex;
+  align-items: center;
+}
+.teambuilding{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* color: white; */
+  margin: 20px 0;
+}
 
   .boutons button{
     margin-bottom: 40px;
@@ -212,20 +167,37 @@ p{
   }
 
   .titre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0 0 0;
+    display: none;
   }
-  #titre-desktop{
+  .titre-desktop{
     display: flex;
   }
 
-  .image{
+  .image img{
     display: none;
+  }
+  .image{
+    width: 50%;
+    padding: 0 40px 0 10px;
+    background-image: url(images/_2041968-2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .bloc-rs{
     display: none;
+  }
+
+  .bloc-haut h3{
+    border-top: none;
+  }
+  .titre-text{
+    padding: 0 20px 0 0;
+  }
+
+  .fa-cocktail, .fa-glass-cheers, .fa-handshake{
+    font-size: 150px;
+    padding: 0 80px;
   }
 }
