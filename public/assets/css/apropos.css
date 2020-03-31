@@ -12,7 +12,6 @@
     color: white;
     font-family: var(--Mountecarlo);
     font-size: 3em;
-    margin: 20px 0 0 20px;
  }
   h2,h3{
     color: white;
@@ -26,7 +25,9 @@
    font-size: 1em;
    font-family: var(--Mountecarlo);
  }
-
+p{
+  margin-bottom: 0;
+}
  #titre-desktop{
    display: none;
  }
@@ -43,6 +44,15 @@
 
 .image img{
   width: 100%;
+  margin: 20px auto 3px auto;
+}
+
+.bloc-rs, .paragraphe{
+  text-align: center;
+}
+.bloc-rs h3{
+  padding-top: 10px;
+  font-size: 2em;
 }
 
 /*
@@ -63,6 +73,14 @@
   border: 1px solid white;
 }
 
+.bloc-haut{
+  text-align: center;
+}
+.bloc-haut h3{
+  padding-bottom: 3px;
+  border-bottom: 1px solid white;
+}
+
 .bloc-bas{
   display: none;
 }
@@ -77,6 +95,30 @@
   margin-right: 20px;
   font-size: 3em;
   opacity: 0;
+}
+
+.google{
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.adress{
+    display: flex;
+    align-items: center;
+}
+
+.reseaux-Soc, .google, .telephone, .adress{
+  padding: 10px 0;
+}
+
+.reserver{
+  margin: 10px 0 10px 0;
+  background-color: var(--Orange);
+  border: 2px solid white;
+  color: white;
 }
 
 /*
@@ -99,10 +141,12 @@
   }
 
   .bloc-gauche{
-    width: 50%;
-    padding: 0 40px 10px 10px;
-    background-image: url(images/_2041995-3.jpg);
-    background-size: cover;
+        width: 50%;
+        padding: 0 40px 0 10px;
+        background-image: url(images/_2041961.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse;
   }
 
   .bloc-haut, .bloc-bas{
@@ -113,9 +157,11 @@
     align-items: center;
     justify-content: center;
   }
+  .bloc-haut h3{
+    font-size: 2em;
+  }
   .bloc-haut{
-    padding-top: 40px;
-    margin-bottom: 20px;
+    background-color: rgba(0,0,0,.8);
   }
   .bloc-bas{
     padding: 20px 0 20px 0;
@@ -161,16 +207,20 @@
   }
 
   .titre{
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0 0 0;
   }
   #titre-desktop{
     display: flex;
   }
 
   .image{
+    display: none;
+  }
+
+  .bloc-rs{
     display: none;
   }
 }
