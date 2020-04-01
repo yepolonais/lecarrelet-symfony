@@ -1,33 +1,12 @@
-/*
- * Reset CSS
- */
-
 
 /*
  * Layout général
  */
 
-
-html{
+main{
+  width: 95%;
   font-size: 2vw;
 }
-.navbar{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: var(--Noir);
-  z-index: 1;
-  height: 100px;
-}
-.footer-main{
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background: var(--Noir);
-  z-index: 1;
-}
-
-
 /*
  * Fin layout général
  */
@@ -35,26 +14,23 @@ html{
 /*
  * Titres
  */
-
-
 .titre{
   height:420px;
-  width: 95%;
 }
 .titre h1{
   font-family:var(--Thrasher);
   color: var(--Blanc);
   /* font-size: 110px; */
-  font-size: 3.5rem;
+  font-size: 3.5em;
   /* letter-spacing: 40px; */
-  letter-spacing: 2rem;
+  letter-spacing: 0.5em;
   padding-left: 40px;
 }
 .titre h2{
   font-family:var(--Mountecarlo);
   color: var(--Blanc);
   /* font-size: 45px; */
-  font-size:1.5rem;
+  font-size:1.5em;
 }
 
 /*
@@ -68,7 +44,6 @@ html{
 .event-mois{
   background: black;
   opacity: 0.9;
-  width: 95%;
   position: sticky;
   top: 100px;
 }
@@ -79,9 +54,9 @@ html{
 .event-mois a{
   font-family: var(--CL);
   color: var(--Blanc);
-  font-size: 1.3rem;
+  font-size: 1.3em;
   border-bottom: 2px solid black;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.2em;
 
   transition: border-bottom 0.3s ease-in;
 }
@@ -111,6 +86,8 @@ html{
   min-width: 350px;
   max-width: 45%;
   margin-bottom : 25px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .event-contenu{
   padding:10px;
@@ -132,7 +109,7 @@ html{
   color: var(--Blanc);
   /* font-size: 0.7rem; */
   font-size:20px;
-  min-height: 8rem;
+  min-height: 8em;
 }
 
 
@@ -149,7 +126,7 @@ html{
 }
 .event-cta{
   width: 90%;
-  height: 2rem;
+  height: 2em;
   background: rgba(0, 0, 0, 0.7);
   color : var(--Orange);
   font-size:1rem;
@@ -158,18 +135,18 @@ html{
 }
 .event-cta:hover{
   background: var(--Orange);
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color : var(--Blanc);
 }
 .event-cta-mobile{
-  height: 6rem;
+  height: 6em;
   background: var(--Orange);
 }
 .event-bouton-mobile{
   font-family: var(--CL_bold);
   color : var(--Noir);
-  font-size:3rem;
-  letter-spacing: 1rem;
+  font-size:3em;
+  letter-spacing: 1em;
   transition: color 0.3s ease-in;
 }
 .event-bouton-mobile:hover{
