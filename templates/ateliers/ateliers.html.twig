@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ateliers{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/ateliers.css') }}" />
+{% endblock %}
+{% block body %}
+<div class="container-fluid">
+  <div class="container">
+    <div class="bloc-formulaire">
+      <div class="titre">
+        <h1>Mixologie</h1>
+      </div>
+      <div class="image">
+        <img src="assets/css/images/_2041968-2.jpg" alt="proprietaires du carrelet bordeaux">
+      </div>
+      <div class="bloc-gauche">
+        <div class="bloc-haut">
+          <div class="titre-desktop">
+            <h2>MIXOLOGIE</h2>
+          </div>
+          <div class="afterwork">
+            <h3>AFTERWORK</h3>
+            <div class="fas fa-cocktail"></div>
+            <div class="titre-text">
+              <h3>AFTERWORK</h3>
+              <p>Nous proposons toute une gamme de cocktails que vous pourrez venir préparer avec notre spécialiste XXX diplômé de l'école de YYY. Retrouvez à tout instant la liste de nos cocktails et les avis de nos clients fidèles.</p>
+            </div>
+          </div>
+          <div class="teambuilding">
+            <h3>TEAM BUILDING</h3>
+            <div class="fas fa-glass-cheers"></div>
+            <div class="titre-text">
+              <h3>TEAM BUILDING</h3>
+              <p>Nous proposons toute une gamme de cocktails que vous pourrez venir préparer avec notre spécialiste XXX diplômé de l'école de YYY. Retrouvez à tout instant la liste de nos cocktails et les avis de nos clients fidèles.</p>
+            </div>
+          </div>
+          <div class="seminaire">
+            <h3>SÉMINAIRE</h3>
+            <div class="fas fa-handshake"></div>
+            <div class="titre-text">
+              <h3>SÉMINAIRE</h3>
+              <p>Nous proposons toute une gamme de cocktails que vous pourrez venir préparer avec notre spécialiste XXX diplômé de l'école de YYY. Retrouvez à tout instant la liste de nos cocktails et les avis de nos clients fidèles.</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-block reserver">RÉSERVER</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('assets/js/ateliers.js') }}"></script>
+{% endblock %}

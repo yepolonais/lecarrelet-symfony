@@ -1,0 +1,202 @@
+/*
+ * Variables couleurs
+ */
+:root{
+    --Bleue: #3A5893;
+}
+
+/*
+ * GENERAL
+ */
+ body{
+   color: white;
+ }
+ h1{
+    /* color: white; */
+    font-family: var(--Mountecarlo);
+    font-size: 3em;
+ }
+  h2,h3{
+    /* color: white; */
+    /* display: none; */
+  }
+ h2{
+   font-size: 73px;
+   font-family: var(--Thrasher);
+ }
+ h3{
+   padding-top: 20px;
+   font-size: 2em;
+   color: var(--Orange);
+   font-family: var(--CL_bold);
+ }
+p{
+  margin-bottom: 10px;
+}
+ .titre{
+    text-align: center;
+ }
+ .titre-desktop{
+   display: none;
+ }
+
+.btn
+{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.image img{
+  width: 100%;
+  margin: 20px auto 3px auto;
+}
+
+.bloc-haut{
+  text-align: center;
+}
+.bloc-haut h3{
+  padding-bottom: 3px;
+  border-top: 1px solid white;
+}
+
+.fa-cocktail, .fa-glass-cheers, .fa-handshake{
+  font-size: 73px;
+  padding: 10px 0 10px 0;
+}
+
+.afterwork,.teambuilding,.seminaire{
+  /* color: white; */
+  margin: 20px 0 20px 0;
+}
+
+.titre-text h3{
+  display: none;
+}
+
+
+.reserver{
+  margin: 10px 0 10px 0;
+  background-color: var(--Orange);
+  border: 2px solid white;
+  color: white;
+}
+
+.light-mode{
+  color: black;
+  background-color: white;
+}
+
+/*
+ * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
+ */
+@media screen and (min-width: 768px) {
+  body{
+    height: 100vh;
+  }
+  h1{
+    display: none;
+  }
+  h2, h3{
+    display: inherit;
+  }
+
+  .bloc-formulaire{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc-gauche{
+        width: 50%;
+  }
+
+  .bloc-haut{
+    padding: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bloc-haut h3{
+    font-size: 2em;
+  }
+
+  .titre-text h3{
+    display: inherit;
+  }
+  .teambuilding > h3, .afterwork > h3, .seminaire > h3{
+    display: none;
+  }
+
+  /* .bloc-haut{
+    background-color: rgba(0,0,0,.8);
+  } */
+
+.afterwork, .seminaire{
+  /* color: white; */
+  display: flex;
+  align-items: center;
+}
+.teambuilding{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* color: white; */
+  margin: 20px 0;
+}
+
+  .boutons button{
+    margin-bottom: 40px;
+  }
+
+
+  .map, .telephone, .adress{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .telephone, .adress{
+    display: flex;
+    justify-content: center;
+  }
+
+  .map iframe{
+    height: 400px;
+  }
+
+  .titre{
+    display: none;
+  }
+  .titre-desktop{
+    display: flex;
+    margin: 20px 0 20px 0;
+  }
+
+  .image img{
+    display: none;
+  }
+  .image{
+    width: 50%;
+    padding: 0 40px 0 10px;
+    background-image: url(images/_2041968-2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bloc-rs{
+    display: none;
+  }
+
+  .bloc-haut h3{
+    border-top: none;
+  }
+  .titre-text{
+    padding: 0 20px 0 0;
+  }
+
+  .fa-cocktail, .fa-glass-cheers, .fa-handshake{
+    font-size: 150px;
+    padding: 0 80px;
+  }
+}

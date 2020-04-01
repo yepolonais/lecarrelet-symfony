@@ -20,4 +20,8 @@ $( function() {
          $(".btn-lg").removeClass('btn-lg');
        }
    });
+   $(".reserver").click(function(){
+     $("body").toggleClass("light-mode");
+   });
+
 } );
