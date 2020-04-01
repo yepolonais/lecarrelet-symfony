@@ -33,9 +33,6 @@
 p{
   margin-bottom: 10px;
 }
- #titre-desktop{
-   display: none;
- }
  .titre{
     text-align: center;
  }
@@ -69,6 +66,7 @@ p{
 
 .afterwork,.teambuilding,.seminaire{
   /* color: white; */
+  margin: 20px 0 20px 0;
 }
 
 .titre-text h3{
@@ -171,6 +169,7 @@ p{
   }
   .titre-desktop{
     display: flex;
+    margin: 20px 0 20px 0;
   }
 
   .image img{
