@@ -71,7 +71,6 @@ dl, ol, ul {
     margin-bottom: 0;
 }
 
-
 body{
     min-width: 320px;
     background-color:var(--Noir);
@@ -88,11 +87,11 @@ li, .list-menu > li, .list-footer > li{
 .navbar{
     padding: 0;
     max-height: 100px;
+    background-color:var(--Noir);
 }
 .navbar button,
 .navbar ul{
     height: 100%;
-
 }
 
 .logo{
@@ -112,9 +111,12 @@ li, .list-menu > li, .list-footer > li{
     display: block;
     width: 100%;
     font-family: var(--Mountecarlo);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color:var(--Orange);
+}
+#telephone-menu{
+    color: var(--Blanc);
 }
 .lien-menu:hover{
     color:var(--Blanc);
@@ -183,6 +185,7 @@ footer *{
         display: flex;
         margin: 0;
         z-index: 10;
+        background-color:var(--Noir);
 
     }
 

@@ -23,7 +23,7 @@ body{
 #divLogo,#divInfo,#blockAdresse{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 #divSecondeLigne{
     display: flex;
@@ -41,11 +41,12 @@ body{
 
 }
 #blockAdresse{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-#blockAdresse p{
+#blockAdresse p,#telInfo,.horairesDayInfo,.happyHourInfo{
     margin:0;
+    font-size: 1.8rem;
 }
 .boutonAccueil{
     display: none;
@@ -63,10 +64,9 @@ body{
 
 @media (min-width: 768px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     #containerIndex{
-        margin-top: 2%;
         display:flex;
         height: 95%;
     }
@@ -109,7 +109,6 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;
     }
     .callToScroll {
         height: 34px;
@@ -143,12 +142,12 @@ body{
 
     #blockVideoAccueil{
         position: absolute;
-        padding: 2%;
+        padding: 3%;
         top: 100%;
         left: 0;
         z-index: 2;
         width: 100vw;
-        height: 100vh;
+        height: 94vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -157,6 +156,7 @@ body{
     }
     #blockVideoAccueil h1,
     #blockVideoAccueil h2{
+        margin-top: 15px;
         color: var(--Blanc);
     }
     #titreH1Accueil{
@@ -166,12 +166,19 @@ body{
     #titreH2Accueil{
         font-family: var(--Mountecarlo);
     }
-    
+    .blockBoutton2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .blockBoutton2 a {
+        margin: 100px;
+        padding: 25px;
+    }
     #videoAccueil{
-        width: 50%;
-        height: 55%;
+        width: 40%;
+        height: 60%;
         border: 2px solid #5e86fc;
         box-shadow: 0px 0px 5px 3px #5e86fc;
     }
-
 }
