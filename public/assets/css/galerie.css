@@ -1,0 +1,66 @@
+
+/*
+ * Layout général
+ */
+
+main{
+  width: 95%;
+  font-size: 2vw;
+}
+/*
+ * Fin layout général
+ */
+
+/*
+ * Titres
+ */
+.titre{
+  height:250px;
+  padding-bottom: 20px;
+}
+.titre h1{
+  font-family:var(--Thrasher);
+  color: var(--Blanc);
+  /* font-size: 110px; */
+  font-size: 3.0em;
+  /* letter-spacing: 40px; */
+  letter-spacing: 0.5em;
+  padding-left: 40px;
+}
+
+/*
+ * Fin titres
+ */
+
+
+/*
+ * Slider
+ */
+.slider{
+  height: calc(100vh - 310px);
+}
+.slider-principal{
+  border: 2px solid #8252ee;
+  box-shadow: 0px 0px 5px 3px #8252ee;
+  background: url(../img/galerie/galerie_1.jpg) center;
+  background-size: cover;
+}
+#fleche-gauche:hover, #fleche-droite:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+/*
+ * Fin Slider
+ */
+
+
+
+ /*
+  * Responsive
+  */
+
+  /* @media (max-width: 768px) {
+    .event-item{
+      max-width: 100%;
+    }
+} */
