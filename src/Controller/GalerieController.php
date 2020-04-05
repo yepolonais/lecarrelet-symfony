@@ -12,7 +12,7 @@ class GalerieController extends AbstractController
      */
     public function index()
     {
-        return $this->render('galerie/index.html.twig', [
+        return $this->render('galerie/galerie.html.twig', [
             'controller_name' => 'GalerieController',
         ]);
     }
