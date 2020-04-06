@@ -14,7 +14,7 @@
     <body>
         {% block header %}
             <header>
-                <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                <nav class="navbar navbar-expand-md navbar-light fixed-top px-md-1">
                     <a class="navbar-brand text-white" href="#">
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="583.915" height="280" viewBox="0 0 583.915 280">
                         <g id="Group_40" data-name="Group 40" transform="translate(-168 -676)">
@@ -123,10 +123,44 @@
                         </g>
                     </svg>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button> -->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span class="fas fa-bars navbar-toggler-icon"></span>
                     </button>
-                    <ul class="nav nav-pills nav-justified collapse navbar-collapse list-menu" id="navbarSupportedContent">
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav nav-justified w-100">
+                        <li class="nav-item">
+                            <a class="lien-menu" href="#">Évènements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="lien-menu" href="#">Galerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="lien-menu" href="#">Atelier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="lien-menu" href="#">La carte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="lien-menu" href="#">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="telephone-menu" href="#">05 56 01 02 03</a>
+                        </li>
+                        <li class="nav-item" id="reserver-menu-btn">
+                            <a class="lien-menu" id="reserver-menu" href="#">réserver</a>
+                        </li>
+                      </ul>
+                    </div>
+
+
+
+                    <!-- <ul class="nav nav-pills nav-justified collapse navbar-collapse list-menu" id="navbarSupportedContent">
                         <li class="nav-item">
                             <a class="lien-menu" href="#">Évènements</a>
                         </li>
@@ -148,7 +182,7 @@
                         <li class="nav-item" id="reserver-menu-btn">
                             <a class="lien-menu" id="reserver-menu" href="#">RÉSERVER</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </nav>
             </header>
         {% endblock %}
@@ -158,9 +192,21 @@
         {% block footer %}
                 <footer class="row">
                     <div class="col-md-5 horaires">
-                        <p>Lundi 11h - 02h00</p>
-                        <p>Mardi  à Vendredi 11h - 02h00</p>
-                        <p>Samedi 11h - 02h00</p>
+                      <div class="row w-100">
+                        <div class="col">
+                          <p>Lundi</p>
+                          <p> 11h - 02h00</p>
+                        </div>
+                        <div class="col">
+                          <p>Mardi  à Vendredi</p>
+                          <p>11h - 02h00</p>
+                        </div>
+                        <div class="col">
+                          <p>Samedi</p>
+                          <p> 11h - 02h00</p>
+                        </div>
+                      </div>
+
                     </div>
                     <div class="col-md-2 social-network">
                         <a class="logo-reseauxSoc" href="#">

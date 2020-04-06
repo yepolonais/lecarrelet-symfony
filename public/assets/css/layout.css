@@ -79,6 +79,9 @@ body{
 li, .list-menu > li, .list-footer > li{
     list-style-type: none;
 }
+p{
+  margin-bottom:0;
+}
 
 
 /*
@@ -86,11 +89,11 @@ li, .list-menu > li, .list-footer > li{
  */
 .navbar{
     padding: 0;
-    max-height: 100px;
+    min-height: 55px;
+    max-width: 100vw;
     background-color:var(--Noir);
 }
-.navbar button,
-.navbar ul{
+.navbar button{
     height: 100%;
 }
 
@@ -101,6 +104,7 @@ li, .list-menu > li, .list-footer > li{
 
 .navbar-toggler-icon{
     color: var(--Orange);
+  height: 55px;
 }
 .nav-item{
     display: flex;
@@ -111,23 +115,24 @@ li, .list-menu > li, .list-footer > li{
     display: block;
     width: 100%;
     font-family: var(--Mountecarlo);
-    font-size: 2.5rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color:var(--Orange);
 }
 #telephone-menu{
     color: var(--Blanc);
+    font-size: 0.6rem;
 }
 .lien-menu:hover{
     color:var(--Blanc);
 }
-
 
 #reserver-menu-btn{
     display: flex;
     align-items: center;
     background-color: var(--Orange);
     border:3px solid var(--Blanc);
+    text-transform: uppercase;
 }
 #reserver-menu{
     font-family: var(--CL);
@@ -141,22 +146,26 @@ li, .list-menu > li, .list-footer > li{
 
  /*Media queries*/
 @media (max-width: 768px) {
-    #navbarSupportedContent{
-        z-index: 2;
-        flex-direction: column;
-        background-color: var(--Noir);
-        height: 90vh;
+    .navbar-nav{
+      height: calc(100vh - 55px);
+    }
+    .lien-menu, #telephone-menu{
+        color:var(--Blanc);
+        font-size: 1.6rem;
     }
     .lien-menu{
-        font-family: var(--Thrasher);
-        font-weight: normal;
-        font-size: 2rem;
-        color:var(--Blanc);
+      font-family: var(--Thrasher);
+      font-weight: normal;
     }
-    #telephone-menu{
-        font-size: 2rem;
-        color: var(--Blanc);
+    #reserver-menu-btn{
+        border:0;
     }
+    #reserver-menu-btn a{
+      font-size: 1.5rem;
+      letter-spacing: 1rem;
+      padding-left: 1rem;
+    }
+
 }
 
 
@@ -169,6 +178,12 @@ li, .list-menu > li, .list-footer > li{
 footer *{
     color:var(--Blanc);
     text-align: center;
+}
+.horaires{
+  font-size: 0.4rem;
+}
+.list-footer{
+  font-size: 0.6rem;
 }
 
 .facebook,.instagram{
@@ -208,5 +223,5 @@ footer *{
     }
     .horaires > p{
         margin: 0;
-    }    
+    }
 }

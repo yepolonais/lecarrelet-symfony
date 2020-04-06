@@ -2,10 +2,11 @@
 /*
  * Layout général
  */
-
+html{
+  font-size: calc(1vw + 1em);
+}
 main{
   width: 95%;
-  font-size: 2vw;
 }
 /*
  * Fin layout général
