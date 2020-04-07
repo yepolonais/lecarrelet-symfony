@@ -2,9 +2,6 @@
 /*
  * Layout général
  */
-html{
-  font-size: calc(1vw + 1em);
-}
 main{
   width: 95%;
 }
@@ -22,11 +19,9 @@ main{
 .titre h1{
   font-family:var(--Thrasher);
   color: var(--Blanc);
-  /* font-size: 110px; */
-  font-size: 3.0em;
-  /* letter-spacing: 40px; */
-  letter-spacing: 0.5em;
-  padding-left: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 /*
@@ -38,7 +33,7 @@ main{
  * Slider
  */
 .slider{
-  height: calc(100vh - 310px);
+  height: calc(100vh - 320px);
 }
 .slider-image{
   height: 100%;
