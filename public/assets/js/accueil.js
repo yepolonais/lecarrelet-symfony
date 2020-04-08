@@ -17,4 +17,3 @@ $(function () {
         $("#callToScrollBas").fadeIn(500);
     });
 });
-

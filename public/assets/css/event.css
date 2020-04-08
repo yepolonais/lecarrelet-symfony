@@ -152,7 +152,15 @@ main{
 /*
  * Fin liste évènements
  */
-
+ /*
+  * Bande-noire
+  */
+.bande-noire{
+  height: 70px;
+}
+ /*
+  * Fin bande-noire
+  */
  /*
   * Responsive
   */
