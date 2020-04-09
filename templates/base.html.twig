@@ -158,31 +158,6 @@
                       </ul>
                     </div>
 
-
-
-                    <!-- <ul class="nav nav-pills nav-justified collapse navbar-collapse list-menu" id="navbarSupportedContent">
-                        <li class="nav-item">
-                            <a class="lien-menu" href="#">Évènements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="lien-menu" href="#">Galerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="lien-menu" href="#">Atelier</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="lien-menu" href="#">La carte</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="lien-menu" href="#">A propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="telephone-menu" href="#">05 56 01 02 03</a>
-                        </li>
-                        <li class="nav-item" id="reserver-menu-btn">
-                            <a class="lien-menu" id="reserver-menu" href="#">RÉSERVER</a>
-                        </li>
-                    </ul> -->
                 </nav>
             </header>
         {% endblock %}
@@ -190,26 +165,29 @@
         {% block body %}{% endblock %}
 
         {% block footer %}
-                <footer class="row">
-                    <div class="col-md-5 horaires">
-                      <div class="row w-100">
+                <footer class="container-fluid">
+                  <div class="row flex-column flex-md-row">
+
+                    <div class="col-md-6  horaires d-flex justify-content-around align-items-center pt-4 pt-md-0">
+                      <div class="row w-100 flex-column flex-md-row">
                         <div class="col">
-                          <p>Lundi</p>
+                          <p class="footer-jour">Lundi</p>
                           <p> 11h - 02h00</p>
                         </div>
                         <div class="col">
-                          <p>Mardi  à Vendredi</p>
+                          <p class="footer-jour">Mardi  à Vendredi</p>
                           <p>11h - 02h00</p>
                         </div>
                         <div class="col">
-                          <p>Samedi</p>
+                          <p class="footer-jour">Samedi</p>
                           <p> 11h - 02h00</p>
                         </div>
                       </div>
 
                     </div>
-                    <div class="col-md-2 social-network">
-                        <a class="logo-reseauxSoc" href="#">
+
+                    <div class="col-md-2  social-network d-flex justify-content-around align-items-center">
+                        <a class="logo-reseauxSoc d-flex h-75 h-md-100 w-100" href="#">
                             <svg class="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100">
                                 <style type="text/css">
                                     .st01{opacity:0.8;fill:#3E5C9A;}
@@ -225,7 +203,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a class="logo-reseauxSoc" href="#">
+                        <a class="logo-reseauxSoc d-flex h-75 h-md-100 w-100" href="#">
                             <svg class="instagram"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100">
                                 <style type="text/css">
                                     .st0{opacity:0.8;fill:url(#SVGID_1_);}
@@ -269,12 +247,15 @@
                             </svg>
                         </a>
                     </div>
-                    <ul class="col-md-5 list-footer">
+
+                    <ul class="col-md-4  list-footer d-flex justify-content-around align-items-center flex-column flex-md-row p-1 p-md-0">
                         <li><a href="#">Plan du site</a></li>
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="#">CGU</a></li>
                         <li><a href="#">Copyright</a></li>
                     </ul>
+
+                  </div>
                 </footer>
         {% endblock %}
 

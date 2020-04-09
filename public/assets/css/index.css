@@ -31,14 +31,14 @@
  */
 
 .index-logo{
-  height: 55vh;
+  height: 60vh;
   padding-top: 100px;
 }
 .index-logo svg{
   height: 100%;
 }
 .index-texte-cta{
-  height: 45vh;
+  height: 30vh;
   padding-bottom: 100px;
 }
 .boutonAccueil{
@@ -60,6 +60,24 @@
   font-size: 0.8rem;
 }
 
+
+
+
+.event-cta-mobile{
+  height: 10vh;
+  background: var(--Orange);
+}
+.event-bouton-mobile{
+  font-family: var(--CL_bold);
+  color : var(--Noir);
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  padding-right: 0.5rem;
+  transition: color 0.3s ease-in;
+}
+.event-bouton-mobile:hover{
+  color : var(--Blanc);
+}
 /*
  * Première page fin
  */
@@ -116,11 +134,17 @@
 
 
 @media (min-width: 768px) {
-  #reserver-menu-btn{
-    visibility: hidden;
+  .navbar{
+    background: rgba(0, 0, 0, 0.5);
   }
   .navbar-brand{
     visibility: hidden;
+  }
+  #reserver-menu-btn{
+    visibility: hidden;
+  }
+  footer{
+    background: rgba(0, 0, 0, 0.5);
   }
   #telephone-menu {
       color: var(--Orange);
@@ -129,6 +153,15 @@
 
   #container-index{
       background-image: url(images/desktopIndex.jpg);
+  }
+
+  .index-logo{
+    height: 55vh;
+    padding-top: 100px;
+  }
+  .index-texte-cta{
+    height: 45vh;
+    padding-bottom: 100px;
   }
 
 }
