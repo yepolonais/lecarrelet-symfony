@@ -5,15 +5,15 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class EventController extends AbstractController
+class GalerieController extends AbstractController
 {
     /**
-     * @Route("/event", name="event")
+     * @Route("/galerie", name="galerie")
      */
     public function index()
     {
-        return $this->render('event/event.html.twig', [
-            'controller_name' => 'EventController',
+        return $this->render('galerie/galerie.html.twig', [
+            'controller_name' => 'GalerieController',
         ]);
     }
 }
