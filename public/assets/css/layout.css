@@ -88,7 +88,7 @@ li, .list-menu > li, .list-footer > li{
 html{
   font-size: calc(1vw + 1em);
 }
-
+/* Formule magique pour obtenir du texte responsive. Utiliser des rem par la suite */
 /*
  * Fin layout général
  */
@@ -102,8 +102,8 @@ html{
     max-width: 100vw;
     background-color:var(--Noir);
 }
-.logo{
-    width: 100px;
+.logo{ /*a ameliorer*/
+    max-width: 100px;
     height: 100%;
 }
 .navbar-toggler-icon{
@@ -216,6 +216,7 @@ footer a, footer .horaires{
 }
 .horaires p{
   padding-bottom: 0.4rem;
+  margin-bottom: 0!important;
 }
 
 @media (min-width: 768px) {

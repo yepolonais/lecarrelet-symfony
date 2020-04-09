@@ -3,9 +3,11 @@
  * Layout général
  */
 
-main{
-  width: 95%;
-}
+ main{
+   width: 95%;
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+ }
 /*
  * Fin layout général
  */
@@ -83,11 +85,9 @@ main{
   min-width: 350px;
   max-width: 45%;
   margin-bottom : 25px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 .event-contenu{
-  padding:10px;
+  padding:20px;
 }
 .event-contenu h2{
   font-family: var(--CL);
