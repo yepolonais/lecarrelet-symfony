@@ -38,7 +38,7 @@
 }
 
 .boutons{
-  margin: 40px 0 20px 0;
+  margin: 0px 0 20px 0;
   display: flex;
   flex-direction: column;
 }
@@ -108,6 +108,14 @@ label{
   border: 1px solid white;
 }
 
+.bloc-haut{
+  margin-top: 23%;
+}
+
+#reserve-contact, #reserve-rappel{
+  margin: 5%;
+}
+
 .bloc-bas{
   display: none;
 }
@@ -122,6 +130,10 @@ label{
   margin-right: 20px;
   font-size: 3em;
   opacity: 0;
+}
+
+#reserve-rappel, #reserve-contact{
+  display: none;
 }
 
 /*
@@ -182,6 +194,7 @@ label{
   }
 
   .boutons{
+  margin: 40px 0 20px 0;
   }
 
   .boutons button{

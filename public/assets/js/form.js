@@ -153,7 +153,12 @@ $( function() {
    $("#contact-validation").click(function(){
      if(contactPrenomOK() && contactNomOK() && contactEmailOK() && contactDatepickerOK() && contactDemandeOK() && contactNumtelephoneOK() && contactNombrePersonneOK() && contactTypeEvenementOK())
     {
-      $(".contact").submit();
+      $("#reserve-contact").show();
+      $(".contact").hide();
+      $("#sous-titre").hide();
+      setTimeout(function(){
+        $(".contact").submit()
+      },3000);
     }
    });
 
@@ -207,7 +212,12 @@ $( function() {
    $("#rappel-validation").click(function(){
      if(rappelPrenomOK() && rappelNomOK() && rappelDemandeOK() && rappelNumtelephoneOK())
      {
-       $(".rappel").submit();
+       $("#reserve-rappel").show();
+       $(".rappel").hide();
+       $("#sous-titre").hide();
+       setTimeout(function(){
+         $(".rappel").submit()
+       },2000);
      }
    });
 
