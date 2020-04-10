@@ -40,9 +40,10 @@
 .boutons{
 <<<<<<< HEAD
 /*  margin: 0px 0 0 0; */
-=======
->>>>>>> rebase
 >>>>>>> update
+=======
+  margin: 0px 0 20px 0;
+>>>>>>> rebase
   display: flex;
   flex-direction: column;
 }
@@ -117,9 +118,12 @@ label{
 }
 
 <<<<<<< HEAD
-=======
->>>>>>> rebase
 >>>>>>> update
+=======
+.bloc-haut{
+  margin-top: 23%;
+}
+>>>>>>> rebase
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -155,9 +159,9 @@ label{
 .facebook, .instagram{
   width: 3rem;
 }
+>>>>>>> update
 =======
 >>>>>>> rebase
->>>>>>> update
 
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
@@ -249,15 +253,15 @@ label{
 <<<<<<< HEAD
 <<<<<<< HEAD
   /*margin: 40px 0 20px 0;*/
-=======
-=======
->>>>>>> update
   /*margin: 40px 0 20px 0;*/
 =======
   margin: 40px 0 20px 0;
 >>>>>>> rebase
 >>>>>>> rebase
 >>>>>>> update
+=======
+  margin: 40px 0 20px 0;
+>>>>>>> rebase
   }
 
   .boutons button{
