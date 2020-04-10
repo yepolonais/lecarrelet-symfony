@@ -38,7 +38,11 @@
 }
 
 .boutons{
+<<<<<<< HEAD
 /*  margin: 0px 0 0 0; */
+=======
+  margin: 0px 0 20px 0;
+>>>>>>> rebase
   display: flex;
   flex-direction: column;
 }
@@ -112,6 +116,12 @@ label{
   border: 1px solid white;
 }
 
+<<<<<<< HEAD
+=======
+.bloc-haut{
+  margin-top: 23%;
+}
+>>>>>>> rebase
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -138,12 +148,15 @@ label{
 #reserve-rappel, #reserve-contact{
   display: none;
 }
+<<<<<<< HEAD
 .bloc-gauche{
   margin-top: 60px;
 }
 .facebook, .instagram{
   width: 3rem;
 }
+=======
+>>>>>>> rebase
 
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
@@ -232,7 +245,11 @@ label{
   }
 
   .boutons{
+<<<<<<< HEAD
   /*margin: 40px 0 20px 0;*/
+=======
+  margin: 40px 0 20px 0;
+>>>>>>> rebase
   }
 
   .boutons button{
