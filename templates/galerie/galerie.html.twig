@@ -22,7 +22,7 @@
     <section class="slider container-fluid">
       <div class="row slider-image flex-nowrap">
 
-        <div class="col-2 fleche-gauche d-none d-md-flex justify-content-center align-items-center">
+        <div class="col-2 fleche-gauche d-none d-md-flex justify-content-center align-items-center ">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 110 109.909">
             <defs>
               <filter id="fleche_precedent" x="0" y="0" width="110" height="109.909" filterUnits="userSpaceOnUse">
@@ -44,22 +44,17 @@
           </svg>
 
         </div>
+        <div class="col-1 slider-gauche w-100 h-100 d-md-none"></div>
+        <div class="col-1 d-md-none"></div>
 
-        <div class="col-8 slider-principal w-100 h-100 owl-carousel owl-theme" id="photo-centre">
+        <div class="col-8 slider-principal w-100 h-100 owl-carousel owl-theme">
           {% for galerie in photos %}
-            <img src="{{ galerie.urlphoto }}" alt="{{ galerie.titre }}">
-          {% endfor %} 
+            <img src="{{ asset(galerie.urlphoto) }}" alt="{{ galerie.titre }}">
+          {% endfor %}
         </div>
 
-        <div class="owl-carousel owl-theme">
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-        </div>
+        <div class="col-1 d-md-none"></div>
+        <div class="col-1 slider-droite w-100 h-100 d-md-none"></div>
 
         <div class="col-2 fleche-droite d-none d-md-flex justify-content-center align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 110 109.909">

@@ -43,7 +43,9 @@ main{
 .slider-principal{
   border: 2px solid #8252ee;
   box-shadow: 0px 0px 5px 3px #8252ee;
-  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
 }
 .slider-gauche, .slider-droite{
   border-top: 2px solid white;
