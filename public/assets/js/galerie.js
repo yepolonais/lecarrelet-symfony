@@ -1,19 +1,28 @@
 $(document).ready(function () {
     // $('.owl-carousel').owlCarousel();
-    var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:1,
+    let owl = $('.owl-carousel');
+    $('.fleche-droite').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+    // Go to the previous item
+    $('.fleche-gauche').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger('prev.owl.carousel', [300]);
+    });
+    owl.owlCarousel({
     loop:true,
-    nav:true
-});
-$('.fleche-droite').click(function() {
-    owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.fleche-gauche').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
+    margin:0,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:3,
+            margin:10
+        },
+        769:{
+            items:1,
+        }
+    }
 })
 });
 

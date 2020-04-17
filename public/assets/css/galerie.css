@@ -75,7 +75,7 @@ main{
   color : var(--Noir);
   font-size: x-large;
   letter-spacing: 1em;
-  transition: color 0.3s ease-in;
+  transition: color 0.1s ease-in;
 }
 .event-bouton-mobile:hover{
   color : var(--Blanc);
