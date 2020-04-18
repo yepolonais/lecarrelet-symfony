@@ -20,7 +20,7 @@ class EvenementRepository extends ServiceEntityRepository
     }
 
 <<<<<<< HEAD
-    
+
 
 =======
 >>>>>>> update
