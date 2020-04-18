@@ -14,26 +14,28 @@
  h1{
     /* color: white; */
     font-family: var(--Mountecarlo);
-    font-size: 3em;
+    font-size: 3rem;
  }
   h2,h3{
     /* color: white; */
     /* display: none; */
   }
  h2{
-   font-size: 73px;
+   font-size: 3rem;
    font-family: var(--Thrasher);
  }
  h3{
    padding-top: 20px;
-   font-size: 2em;
+   font-size: 2rem;
    color: var(--Orange);
    font-family: var(--CL_bold);
  }
 p{
+  line-height: 1;
   margin-bottom: 10px;
 }
  .titre{
+   margin-top: 60px;
     text-align: center;
  }
  .titre-desktop{
@@ -55,18 +57,16 @@ p{
   text-align: center;
 }
 .bloc-haut h3{
-  padding-bottom: 3px;
   border-top: 1px solid white;
 }
 
 .fa-cocktail, .fa-glass-cheers, .fa-handshake{
-  font-size: 73px;
+  font-size: 3rem;
   padding: 10px 0 10px 0;
 }
 
 .afterwork,.teambuilding,.seminaire{
   /* color: white; */
-  margin: 20px 0 20px 0;
 }
 
 .titre-text h3{
@@ -100,17 +100,22 @@ p{
     display: inherit;
   }
 
+  p{
+    font-size: .7rem;
+  }
+
   .bloc-formulaire{
     display: flex;
     justify-content: space-between;
   }
 
   .bloc-gauche{
+        margin: 80px 0 60px 0;
         width: 50%;
   }
 
   .bloc-haut{
-    padding: 5% 10px 5% 10px;
+    padding: 0 1%;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -118,10 +123,11 @@ p{
     justify-content: center;
   }
   .bloc-haut h3{
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   .titre-text h3{
+    font-size: 1rem;
     display: inherit;
   }
   .teambuilding > h3, .afterwork > h3, .seminaire > h3{
@@ -177,7 +183,6 @@ p{
   }
   .image{
     width: 50%;
-    padding: 0 40px 0 10px;
     background-image: url(images/_2041968-2.jpg);
     background-size: cover;
     display: flex;
@@ -192,11 +197,11 @@ p{
     border-top: none;
   }
   .titre-text{
-    padding: 0 20px 0 0;
+    padding: 0 1% 0 0;
   }
 
   .fa-cocktail, .fa-glass-cheers, .fa-handshake{
-    font-size: 150px;
-    padding: 0 80px;
+    font-size: 3rem;
+    padding: 0 2%;
   }
 }
