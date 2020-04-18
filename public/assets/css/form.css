@@ -11,7 +11,7 @@
  h1{
     color: white;
     font-family: var(--Mountecarlo);
-    font-size: 3em;
+    /* font-size: 3em; */
     margin: 20px 0 0 20px;
  }
   h2,h3{
@@ -19,7 +19,7 @@
     display: none;
   }
  h2{
-   font-size: 73px;
+   font-size: 2rem;
    font-family: var(--Thrasher);
  }
  h3{
@@ -38,7 +38,7 @@
 }
 
 .boutons{
-  margin: 0px 0 20px 0;
+/*  margin: 0px 0 0 0; */
   display: flex;
   flex-direction: column;
 }
@@ -103,14 +103,15 @@ label{
     padding-right: 60px;
 }
 
+.map{
+  margin: 5% 0 0 0;
+}
+
 .map iframe{
   width: 100%;
   border: 1px solid white;
 }
 
-.bloc-haut{
-  margin-top: 23%;
-}
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -124,16 +125,24 @@ label{
   padding-left: 10px;
   line-height: inherit !important;
 }
+.titre{
+  text-align: center;
+}
 
 .retour{
+  font-size: 2rem;
   color: white;
-  margin-right: 20px;
-  font-size: 3em;
   opacity: 0;
 }
 
 #reserve-rappel, #reserve-contact{
   display: none;
+}
+.bloc-gauche{
+  margin-top: 60px;
+}
+.facebook, .instagram{
+  width: 3rem;
 }
 
 /*
@@ -147,22 +156,27 @@ label{
   h2, h3{
     display: inherit;
   }
+  h3{
+    font-size: 1rem;
+  }
 
   .bloc-formulaire{
     display: flex;
     justify-content: space-between;
-    margin-top: 3%;
   }
 
   .bloc-gauche{
     width: 50%;
-    padding: 10px 40px 0 10px;
+    padding: 0 1%;
     background-image: url(images/_2041960.jpg);
     background-size: cover;
   }
 
+  .bloc-gauche, .coordonnes{
+    margin-top: 80px;
+  }
+
   .bloc-haut, .bloc-bas{
-    padding: 10px;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -170,31 +184,54 @@ label{
     justify-content: center;
   }
   .bloc-haut{
-    padding-top: 5%;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
   }
+
   .bloc-bas{
-    padding: 20px 0 20px 0;
+    padding: 0;
   }
   .google{
-    font-size: 1.5em;
     display: flex;
     padding: 5px 0;
   }
 
+  .retour{
+    margin-right: 20px;
+    position: absolute;
+    right: 100%
+  }
+
+  #btn-fb:hover{
+    background-color: white;
+    color: var(--Bleue);
+    border: 2px solid var(--Bleue);
+  }
+  #btn-mail:hover, .confirmation:hover{
+    background-color: white;
+    border: 2px solid var(--Orange);
+    color: var(--Orange);
+  }
+  #btn-tel:hover{
+    background-color: white;
+    color: var(--Noir);
+    border: 2px solid var(--Noir);
+  }
+
+  .reseaux-Soc{
+    display: flex;
+  }
 
   .coordonnes{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5em;
     border: 1px solid white;
-    padding: 2.7rem 10px 0 10px
+    padding: 0;
   }
 
   .boutons{
-  margin: 40px 0 20px 0;
+  /*margin: 40px 0 20px 0;*/
   }
 
   .boutons button{
@@ -217,9 +254,29 @@ label{
   }
 
   .titre{
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .titre h2{
+    padding-top: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .coordonnes h2{
+    padding-top: 0.5rem;
+  }
+
+  .google p{
+    font-size: 1rem;
+  }
+
+  #sous-titre{
+    font-size: 1rem;
   }
 }

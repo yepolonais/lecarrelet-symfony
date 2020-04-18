@@ -18,7 +18,7 @@
     /* display: none; */
   }
  h2{
-   font-size: 73px;
+   font-size: 2rem;
    font-family: var(--Thrasher);
  }
  h3{
@@ -62,6 +62,7 @@ p{
 .adress{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .icon-tel, .icon-adress{
@@ -71,6 +72,10 @@ p{
 .map iframe{
   width: 100%;
   border: 1px solid white;
+}
+
+.bloc-gauche{
+  margin-top: 60px;
 }
 
 .bloc-haut{
@@ -105,13 +110,8 @@ p{
   align-items: center;
 }
 
-.adress{
-    display: flex;
-    align-items: center;
-}
-
 .reseaux-Soc, .google, .telephone, .adress{
-  padding: 10px 0;
+  padding: 1% 0;
 }
 
 .reserver{
@@ -119,6 +119,12 @@ p{
   background-color: var(--Orange);
   border: 2px solid white;
   color: white;
+}
+#facebook, #instagram{
+  width: 50%;
+}
+.facebook, .instagram{
+  width: 100%;
 }
 
 /*
@@ -138,11 +144,12 @@ p{
   .bloc-formulaire{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
   }
 
   .bloc-gauche{
+        margin-top: 0;
         width: 50%;
-        padding: 0 40px 0 10px;
         background-image: url(images/_2041961.jpg);
         background-size: cover;
         display: flex;
@@ -158,7 +165,7 @@ p{
     justify-content: center;
   }
   .bloc-haut h3{
-    font-size: 2em;
+    font-size: 1rem;
   }
   .bloc-haut{
     background-color: rgba(0,0,0,.8);
@@ -180,8 +187,13 @@ p{
     align-items: center;
     font-size: 1.5em;
     border: 1px solid white;
-    padding: 40px 40px 10px 40px;
+    padding: 0 1%;
+    margin-top: 80px;
+  }
 
+  .paragraphe{
+    line-height: 1;
+    font-size: 1rem;
   }
 
   .boutons{
@@ -194,12 +206,12 @@ p{
 
   .map, .telephone, .adress{
     width: 100%;
-    margin: 20px 0 0 0;
   }
 
   .telephone, .adress{
     display: flex;
     justify-content: center;
+    font-size: 1rem;
   }
 
   .map iframe{

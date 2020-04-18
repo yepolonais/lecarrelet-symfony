@@ -58,20 +58,18 @@
   <section class="event-liste container-fluid">
       <div class="row">
         <div class="col d-flex flex-wrap justify-content-center justify-content-md-between">
-
+          {% for evenement in evenements %}
           <article class="event-item container border border-white" data-filter="Janvier">
             <div class="row">
               <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
                 <div class="event-titre-h2 d-flex justify-content-center align-content-center">
-                  <h2 class="text-center">St Valentin</h2>
+                  <h2 class="text-center">{{ evenement.titre }}</h2>
                 </div>
                 <div class="event-titre-h3 d-flex justify-content-center align-content-center">
-                  <h3 class="text-center">Date de l'évènement</h2>
+                  <h3 class="text-center">{{ evenement.debut }} au {{ evenement.fin }}</h2>
                 </div>
                 <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
-                  <p>Ce superbe évènement vous permettra de chibrer vos amis - venez partager le COVID!!</p>
-                  <p>Un COVID partagé, un cocktail offert!!</p>
-                  <p>Guest star de la soirée : BGdream, il nous ramène la coupe à la maison :)</p>
+                  <p>{{ evenement.description }}</p>
                 </div>
               </div>
 
@@ -84,6 +82,7 @@
                 </div>
               </div>
             </div>
+            {% end for %}
 
             <div class="row">
               <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
