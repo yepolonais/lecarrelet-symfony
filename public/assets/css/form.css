@@ -39,13 +39,10 @@
 
 .boutons{
 <<<<<<< HEAD
-<<<<<<< HEAD
 /*  margin: 0px 0 0 0; */
 =======
-  margin: 0px 0 20px 0;
 >>>>>>> rebase
-=======
->>>>>>> rebase
+>>>>>>> update
   display: flex;
   flex-direction: column;
 }
@@ -120,14 +117,9 @@ label{
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.bloc-haut{
-  margin-top: 23%;
-}
->>>>>>> rebase
 =======
 >>>>>>> rebase
+>>>>>>> update
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -156,6 +148,7 @@ label{
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> update
 .bloc-gauche{
   margin-top: 60px;
 }
@@ -164,8 +157,7 @@ label{
 }
 =======
 >>>>>>> rebase
-=======
->>>>>>> rebase
+>>>>>>> update
 
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
@@ -258,14 +250,14 @@ label{
 <<<<<<< HEAD
   /*margin: 40px 0 20px 0;*/
 =======
-  /*margin: 40px 0 20px 0;*/
->>>>>>> update
 =======
+>>>>>>> update
   /*margin: 40px 0 20px 0;*/
 =======
   margin: 40px 0 20px 0;
 >>>>>>> rebase
 >>>>>>> rebase
+>>>>>>> update
   }
 
   .boutons button{
