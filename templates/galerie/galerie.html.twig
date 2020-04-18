@@ -42,19 +42,13 @@
               </g>
             </g>
           </svg>
-
         </div>
-        <div class="col-1 slider-gauche w-100 h-100 d-md-none"></div>
-        <div class="col-1 d-md-none"></div>
 
-        <div class="col-8 slider-principal w-100 h-100 owl-carousel owl-theme">
+        <div class="col col-md-8 slider-principal  owl-carousel owl-theme">
           {% for galerie in photos %}
             <img src="{{ asset(galerie.urlphoto) }}" alt="{{ galerie.titre }}">
           {% endfor %}
         </div>
-
-        <div class="col-1 d-md-none"></div>
-        <div class="col-1 slider-droite w-100 h-100 d-md-none"></div>
 
         <div class="col-2 fleche-droite d-none d-md-flex justify-content-center align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 110 109.909">
