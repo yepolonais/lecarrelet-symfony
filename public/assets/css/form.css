@@ -45,8 +45,8 @@
   margin: 0px 0 20px 0;
 >>>>>>> rebase
 =======
-  margin: 0px 0 20px 0;
->>>>>>> rebase
+/*  margin: 0px 0 0 0; */
+>>>>>>> update
   display: flex;
   flex-direction: column;
 }
@@ -128,10 +128,7 @@ label{
 }
 >>>>>>> rebase
 =======
-.bloc-haut{
-  margin-top: 23%;
-}
->>>>>>> rebase
+>>>>>>> update
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -169,7 +166,7 @@ label{
 =======
 >>>>>>> rebase
 =======
->>>>>>> rebase
+>>>>>>> update
 
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
@@ -265,8 +262,8 @@ label{
   margin: 40px 0 20px 0;
 >>>>>>> rebase
 =======
-  margin: 40px 0 20px 0;
->>>>>>> rebase
+  /*margin: 40px 0 20px 0;*/
+>>>>>>> update
   }
 
   .boutons button{

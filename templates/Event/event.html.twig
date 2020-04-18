@@ -62,7 +62,6 @@
 
           {% for evenement in evenements  %}
           <article class="event-item container border border-white" data-debutMois="{{ evenement.debut| date('m') }}" data-finMois="{{ evenement.fin| date('m') }}">
-=======
           {% for evenement in evenements %}
           <article class="event-item container border border-white" data-filter="Janvier">
 >>>>>>> update
@@ -77,10 +76,6 @@
                 </div>
                 <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
                 <p>{{ evenement.description }}</p>
-=======
-                  <h3 class="text-center">{{ evenement.debut }} au {{ evenement.fin }}</h2>
-                </div>
-                <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
                   <p>{{ evenement.description }}</p>
                 </div>
               </div>
