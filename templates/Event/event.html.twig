@@ -60,7 +60,7 @@
         <div class="col d-flex flex-wrap justify-content-center justify-content-md-between">
 
           {% for evenement in evenements %}
-          <article class="event-item container border border-white" data-filter="Janvier">
+          <article class="event-item container border border-white" data-debutMois="{{ evenement.debut| date('m') }}" data-finMois="{{ evenement.fin| date('m') }}">
             <div class="row">
               <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
                 <div class="event-titre-h2 d-flex justify-content-center align-content-center">
