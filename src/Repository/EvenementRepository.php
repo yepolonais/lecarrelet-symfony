@@ -20,10 +20,13 @@ class EvenementRepository extends ServiceEntityRepository
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 
 =======
 >>>>>>> update
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
     // /**
     //  * @return Evenement[] Returns an array of Evenement objects
     //  */

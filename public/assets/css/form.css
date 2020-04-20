@@ -40,6 +40,7 @@
 .boutons{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*  margin: 0px 0 0 0; */
 =======
   margin: 0px 0 20px 0;
@@ -47,6 +48,9 @@
 =======
 /*  margin: 0px 0 0 0; */
 >>>>>>> update
+=======
+/*  margin: 0px 0 0 0; */
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
   display: flex;
   flex-direction: column;
 }
@@ -122,6 +126,7 @@ label{
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .bloc-haut{
   margin-top: 23%;
@@ -129,6 +134,8 @@ label{
 >>>>>>> rebase
 =======
 >>>>>>> update
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -157,8 +164,11 @@ label{
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
 .bloc-gauche{
   margin-top: 60px;
 }
@@ -166,10 +176,13 @@ label{
   width: 3rem;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rebase
 =======
 >>>>>>> update
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
 
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
@@ -190,9 +203,12 @@ label{
     display: flex;
     justify-content: space-between;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-bottom: 60px;
 =======
 >>>>>>> update
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
   }
 
   .bloc-gauche{
@@ -263,6 +279,7 @@ label{
   .boutons{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   /*margin: 40px 0 20px 0;*/
 =======
   margin: 40px 0 20px 0;
@@ -270,6 +287,9 @@ label{
 =======
   /*margin: 40px 0 20px 0;*/
 >>>>>>> update
+=======
+  /*margin: 40px 0 20px 0;*/
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
   }
 
   .boutons button{
