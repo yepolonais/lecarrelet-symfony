@@ -7,7 +7,10 @@ use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
 use App\Entity\Evenement;
 =======
->>>>>>> update
+use App\Entity\Evenement;
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
 use App\Repository\EvenementRepository;
 
 class EventController extends AbstractController
@@ -29,6 +32,7 @@ class EventController extends AbstractController
         return $this->render('event/event.html.twig', [
           'evenements' => $evenements,
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
             'controller_name' => 'EventController',
         ]);
     }

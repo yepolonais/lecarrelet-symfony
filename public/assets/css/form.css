@@ -47,6 +47,7 @@
 =======
 /*  margin: 0px 0 0 0; */
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
   display: flex;
   flex-direction: column;
 }
@@ -129,6 +130,7 @@ label{
 >>>>>>> rebase
 =======
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -157,6 +159,9 @@ label{
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
 .bloc-gauche{
   margin-top: 60px;
 }
@@ -167,6 +172,7 @@ label{
 >>>>>>> rebase
 =======
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
 
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
@@ -186,7 +192,10 @@ label{
   .bloc-formulaire{
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     margin-bottom: 60px;
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
   }
 
   .bloc-gauche{
@@ -264,6 +273,10 @@ label{
 =======
   /*margin: 40px 0 20px 0;*/
 >>>>>>> update
+=======
+  /*margin: 40px 0 20px 0;*/
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
   }
 
   .boutons button{

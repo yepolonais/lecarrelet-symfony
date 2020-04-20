@@ -79,6 +79,7 @@ class Evenement
 =======
         return $this->fin;
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
     }
 
     public function setFin(?\DateTimeInterface $fin): self
