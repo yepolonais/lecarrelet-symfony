@@ -33,12 +33,12 @@
             <button id="rappel-validation" type="button" class="btn btn-block confirmation">Me rappeler</button>
           </form>
           <form class="contact" method="get">
+            {% for evenement in evenements  %}
             <select class="bouton type-evenement" name="type-evenement">
-              <option value="">Type d'évènement</option>
-              <option value="mixologie">Mixologie</option>
-              <option value="evg-evjf">EVG / EVJF</option>
-              <option value="team-building">Team Building</option>
+              <option value="{{ evenement.titre }}">{{ evenement.titre }}</option>
+
             </select>
+            {% endfor %}
             <select class="bouton nombre-personne" name="nombre-personne">
               <option value="">Nombre de personnes</option>
               <option value="1">1</option>
