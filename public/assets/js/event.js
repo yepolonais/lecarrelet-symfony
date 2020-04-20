@@ -7,12 +7,13 @@ $(function()
   {
     //console.log(this.text);
     let moisChoisi = this.text.toLowerCase();//retourne le mois que l'on clique
-    //console.log(moisChoisi);
+    // console.log(moisChoisi);
     let moisChiffre = moisAnnee.indexOf(moisChoisi)+1; //retourne le mois sous forme de chiffre, janvier => 1
     //console.log(moisChiffre);
 
     let maListe = document.getElementsByClassName("event-item"); //retourne une liste de tous les events
     // console.log(Number(maListe[0].dataset.debutmois), Number(maListe[0].dataset.finmois));
+    console.log(maListe);
 
     let i = 0;
     while(i < maListe.length)
