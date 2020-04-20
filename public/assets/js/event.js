@@ -33,5 +33,8 @@ $(function()
       i++;
     }
   });
+  $("#eventAll").click(function(){
+    
+  });
 });
 //Cette fonction de tri des event fonctionne avec l'attribut data-{filter} propre au HTML5.
