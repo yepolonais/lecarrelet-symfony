@@ -1,0 +1,280 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La Carte {% endblock %}
+
+{% block stylesheets %}
+    {# Evite d'écraser style css du layout.css#}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/carte.css') }}" />
+{% endblock %}
+
+{% block body %}
+    <h1>Notre Carte</h1>
+    <div class="container">
+        <div class="accordion" id="exempleAccordeon">
+            <div class="card">
+                <div class="card-header" id="header1">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><h2>COCKTAILS</h2></button>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="header1" data-parent="#exempleAccordeon">
+                    <div class="card-body">
+                        <h3>SIGNATURES</h3>
+                        <span class="prix">12€</span>
+                        <h4 class="item">Vas'y Francky</h4>
+                        <p>Rhum épicé -liqueur de vanille - purée de passion - orange -menthe</p>
+                        <h4 class="item">Love Strike</h4>
+                        <p>Vodka - liqueur de mandarine - purée de fraise - citron pressé -ginger beer</p>
+                        <h4 class="item">Galak</h4>
+                        <p>Jack Daniel's - liqueur de chocolat blanc - liqueur de mandarine - angostura</p>
+                        <h4 class="item">T'es qui là ?</h4>
+                        <p>Tequila - crème de framboise - citron pressé - miel - concombre</p>
+                        <h4 class="item">Spicy Dizzy</h4>
+                        <p>Gin - liqueur de mangue - citron pressé - sirop piment cannelle maison</p>
+                        <h3 class="espace">MOCKTAILS</h3>
+                        <span class="prix">7€</span>
+                        <h4 class="item">Détox</h4>
+                        <p>Jus de pomme - citron pressé - sirop de miel - concombre - eau pétillante</p>
+                        <h4 class="item">Bébé Francky</h4>
+                        <p>Jus de pomme - orange - purée de passion - sirop de vanille - menthe</p>
+                        <h4 class="item">A l'italienne</h4>
+                        <p>Purée de fraise - vinaigre balsamique - citron pressé - sirop de poivre maison - eau pétillante</p>
+                        <h3 class="espace">CLASSIQUES</h3>
+                        <h4 class="item">Gin Tonic</h4>
+                        <p>Gin HTK & tonic</p>
+                        <span class="prix">8€</span>
+                        <h4 class="item">Mojito</h4>
+                        <p>Rhum Havana 3'- jus de citron pressé - menthe - agostura bitter - sucre cassonnade - eau pétillante</p>
+                        <span class="prix">8€</span>
+                        <h4 class="item">A l'italienne</h4>
+                        <p>Purée de fraise - vinaigre balsamique - citron pressé - sirop de poivre maison - eau pétillante</p>
+                        <span class="prix">8€</span>
+                        <h4 class="item">Caïpirinha</h4>
+                        <p>Cachaça Aguacana - jus de citron pressé - sucre</p>
+                        <span class="prix">8€</span>
+                        <h4 class="item">Cuba Libre</h4>
+                        <p>Rhum ambré - Coca - citron vert</p>
+                        <span class="prix">8€</span>
+                        <h4 class="item">Black Russian</h4>
+                        <p>Vodka Russian standard - liqueur de Kalhua</p>
+                        <span class="prix">9€</span>
+                        <h4 class="item">Moscou Mule</h4>
+                        <p>Vodka Russian standard - citron pressé - ginger beer</p>
+                        <span class="prix">9€</span>
+                        <h4 class="item">Nuletta</h4>
+                        <p>Tequila Jose cuervo especial - citron vert - ginger beer</p>
+                        <span class="prix">9€</span>
+                        <h4 class="item">Sex On The Beach</h4>
+                        <p>Vodka Russian standard - liqueur de pêche jus de cranberry - ananas pressé</p>
+                        <span class="prix">9€</span>
+                        <h4 class="item">Piña Colada</h4>
+                        <p>Rhum blanc - Rhum ambré - crème de coco - jus d'ananas</p>
+                        <span class="prix">9€</span>
+                        <h4 class="item">Maitai</h4>
+                        <p>Rhum ambré - Cointreau - jus de citron pressé - sirop d'orgeat</p>
+                        <span class="prix">10€</span>
+                        <h4 class="item">Cosmopolitan</h4>
+                        <p>Vodka Russian standard - Cointreau jus de citron pressé - jus de cranberry</p>
+                        <span class="prix">10€</span>
+                        <h4 class="item">Southside Cuncumber</h4>
+                        <p>Vodka Russian standard - Cointreau jus de citron pressé - jus de cranberry</p>
+                        <span class="prix">10€</span>
+                        <h4 class="item">Margarita</h4>
+                        <p>Tequila Jose cuervo especial - Cointreau - jus de citron pressé - sucre de canne</p>
+                        <span class="prix">10€</span>
+                        <h4 class="item">Old Fashioned</h4>
+                        <p>Bourbon - sucre cassonnade - Agostura bitter</p>
+                        <span class="prix">10€</span>
+                        <h4 class="item">Bloody Mary</h4>
+                        <p>Vodka Russian standard - jus de tomate - assaisonnement</p>
+                        <span class="prix">10€</span>
+                        <h4 class="item">Expressio Martini</h4>
+                        <p>Vodka Russian standard - liqueur de Kalhua - café - sucre liquide</p>
+                        <span class="prix">11€</span>
+                        <h4 class="item">Long Island</h4>
+                        <p>Gin HTK - Vodka Russian standard - Rhum Havana 3' - Tequila Jose cuervo especial - Cointreau - citron pressé - Coca</p>
+                        <span class="prix">13€</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="header2">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><h2>BIERES</h2></button>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="header2" data-parent="#exempleAccordeon">
+                    <div class="card-body">
+                        <p class="sous-titre">Les pressions</p>
+                        <h4 class="item">Le Carrelet</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="quantite">25cl</td>
+                                    <td class="quantite">50cl</td>
+                                </tr>
+                                <tr>
+                                    <td class="prix">3.5€</td>
+                                    <td class="prix">6€</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="item">Le Goudale</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="quantite">25cl</td>
+                                <td class="quantite">50cl</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">4.5€</td>
+                                <td class="prix">8€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="item">La Silly blanche</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="quantite">25cl</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">4.5€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="item">La Queue de Charrue ambrée</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="quantite">33cl</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">5.5€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="item">La Grisette fruits des bois</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="quantite">33cl</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">6€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="item">La Desperados</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="quantite">33cl</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">6€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="header3">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><h2>VINS</h2></button>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="header3" data-parent="#exempleAccordeon">
+                    <div class="card-body">
+                        <h4 class="item sansmargintop">Rouge, blanc, rosé</h4>
+                        <span class="prix">4.5€</span>
+                        <h4 class="item">Le Champagne</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="quantite">Bouteille</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">32€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="item">La Bulle</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="quantite">Coupe</td>
+                                <td class="quantite">Bouteille</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">7€</td>
+                                <td class="prix">32€</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="header4">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"><h2>SHOOTERS</h2></button>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="header4" data-parent="#exempleAccordeon">
+                    <div class="card-body">
+                        <h4 class="item">After Eight</h4>
+                        <p>Baileys - Get 27</p>
+                        <span class="prix">5€</span>
+                        <h4 class="item">Thor</h4>
+                        <p>Absinthe - whisky</p>
+                        <span class="prix">5€</span>
+                        <h4 class="item">Petit Nuage</h4>
+                        <p>Sumbuca - tequila - tabasco</p>
+                        <span class="prix">5€</span>
+                        <h4 class="item">Baby Guinness</h4>
+                        <p>Tequila café - Baileys</p>
+                        <span class="prix">5€</span>
+                        <h4 class="item">Le Carrelet</h4>
+                        <p>Rhum coco torréfié</p>
+                        <span class="prix">6€</span>
+                        <h4 class="item">Basique</h4>
+                        <p>Alcool - sirop</p>
+                        <span class="prix">4€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="header5">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"><h2>TAPAS</h2></button>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="header5" data-parent="#exempleAccordeon">
+                    <div class="card-body">
+                        <h4 class="item sansmargintop">Tapas du moment</h4>
+                        <span class="prix">8€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="header6">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"><h2>BOCAUX</h2></button>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="header6" data-parent="#exempleAccordeon">
+                    <div class="card-body">
+                        <p class="sous-titre">Plats</p>
+                        <span class="prix">9.90€</span>
+                        <p class="avecmarginbottom avecmargintop">BOEUF BOURGUIGNON & SES LEGUMES</p>
+                        <p class="avecmarginbottom">RISOTTO DE QUINOA AGRUMES & LEGUMES</p>
+                        <p class="avecmarginbottom">BLANQUETTE DE VEAU A L'ANCIENNE</p>
+                        <p class="avecmarginbottom">HACHIS PARMENTIER DE CANARD</p>
+                        <p class="avecmarginbottom">BRANDADE DE CABILLAUD & CITRON VERT</p>
+                        <p class="sous-titre">Formule</p>
+                        <span class="prix">12.90€</span>
+                        <p class="avecmarginbottom avecmargintop">PLAT + BOISSON (Vin, Bière, Soft)</p>
+                        <span class="prix">(Sur place ou à emporter)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+
+.card {
+    background-color: black;
+    border-color: #e9531d;
+}
+.card-body{
+    text-align: center;
+}
+h1 {
+    font-size: 1.6em;
+    font-family: Mountecarlo, sans-serif;
+    color: #e9531d;
+    text-align: center;
+}
+h2 {
+    font-family: "Thrasher";
+    color: white;
+    font-size: 2em;
+}
+.card-header {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: #e9531d;
+    font-size: 1.6em;
+    font-family: "Thrasher";
+}
+h4 {
+    font-family: Mountecarlo, sans-serif;
+    font-size: 1.9em;
+    color: white;
+    margin: 30px 0px 20px 0px;
+}
+p {
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+.prix {
+    color: #e9531d;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: "CLitalic" , sans-serif;
+}
+.quantite {
+    color: white;
+    font-size: 1.2em ;
+    /*font-family: ;*/
+}
+.espace {
+    margin-top: 40px;
+}
+table {
+    color: white;
+    margin: auto;
+}
+td {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+.sansmargintop {
+    margin: 0;
+}
+.avecmarginbottom {
+    margin-bottom: 30px ;
+}
+.avecmargintop {
+    margin-top: 20px;
+}
+.sous-titre {
+    font-family: "CLitalic", sans-serif;
+}
