@@ -1,114 +1,114 @@
 /*
  * Variables couleurs
  */
-:root{
-    --Bleue: #3A5893;
-}
+ :root{
+     --Bleue: #3A5893;
+ }
 
-/*
- * GENERAL
- */
- h1{
-    color: white;
-    font-family: var(--Mountecarlo);
-    font-size: 3em;
- }
-  h2,h3{
-    color: white;
-    /* display: none; */
+ /*
+  * GENERAL
+  */
+  h1{
+     color: white;
+     font-family: var(--Mountecarlo);
+     font-size: 3em;
   }
- h2{
-   font-size: 2rem;
-   font-family: var(--Thrasher);
+   h2,h3{
+     color: white;
+     /* display: none; */
+   }
+  h2{
+    font-size: 2rem;
+    font-family: var(--Thrasher);
+  }
+  h3{
+    font-size: 1em;
+    font-family: var(--Mountecarlo);
+  }
+ p{
+   margin-bottom: 0;
  }
- h3{
-   font-size: 1em;
-   font-family: var(--Mountecarlo);
+  #titre-desktop{
+    display: none;
+  }
+
+ .coordonnes, .coordonnes a, p{
+   color: white;
  }
-p{
-  margin-bottom: 0;
-}
- #titre-desktop{
+
+ .btn
+ {
+   color: white;
+   margin-bottom: 10px;
+ }
+
+ .image img{
+   width: 100%;
+   margin: 20px auto 3px auto;
+ }
+
+ .bloc-rs, .paragraphe{
+   text-align: center;
+ }
+ .bloc-rs h3{
+   padding-top: 10px;
+   font-size: 2em;
+ }
+
+ /*
+  * coordonnes
+  */
+
+ .adress{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+
+ .icon-tel, .icon-adress{
+     padding-right: 60px;
+ }
+
+ .map iframe{
+   width: 100%;
+   border: 1px solid white;
+ }
+
+ .bloc-gauche{
+   margin-top: 60px;
+ }
+
+ .bloc-haut{
+   text-align: center;
+ }
+ .bloc-haut h3{
+   padding-bottom: 3px;
+   border-bottom: 1px solid white;
+ }
+
+ .bloc-bas{
    display: none;
  }
+ .fa-star, .fa-star-half{
+   color: #ED8A19;
+   padding-left: 10px;
+   line-height: inherit !important;
+ }
 
-.coordonnes, .coordonnes a, p{
-  color: white;
-}
+ .retour{
+   color: white;
+   margin-right: 20px;
+   font-size: 3em;
+   opacity: 0;
+ }
 
-.btn
-{
-  color: white;
-  margin-bottom: 10px;
-}
-
-.image img{
-  width: 100%;
-  margin: 20px auto 3px auto;
-}
-
-.bloc-rs, .paragraphe{
-  text-align: center;
-}
-.bloc-rs h3{
-  padding-top: 10px;
-  font-size: 2em;
-}
-
-/*
- * coordonnes
- */
-
-.adress{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.icon-tel, .icon-adress{
-    padding-right: 60px;
-}
-
-.map iframe{
-  width: 100%;
-  border: 1px solid white;
-}
-
-.bloc-gauche{
-  margin-top: 60px;
-}
-
-.bloc-haut{
-  text-align: center;
-}
-.bloc-haut h3{
-  padding-bottom: 3px;
-  border-bottom: 1px solid white;
-}
-
-.bloc-bas{
-  display: none;
-}
-.fa-star, .fa-star-half{
-  color: #ED8A19;
-  padding-left: 10px;
-  line-height: inherit !important;
-}
-
-.retour{
-  color: white;
-  margin-right: 20px;
-  font-size: 3em;
-  opacity: 0;
-}
-
-.google{
-  font-size: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+ .google{
+   font-size: 1em;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+ }
 
 .reseaux-Soc, .google, .telephone, .adress{
   padding: 1% 0;
@@ -126,7 +126,6 @@ p{
 .facebook, .instagram{
   width: 100%;
 }
-
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
  */
@@ -199,40 +198,40 @@ p{
   .boutons{
   }
 
-  .boutons button{
-    margin-bottom: 40px;
-  }
+    .boutons button{
+      margin-bottom: 40px;
+    }
 
 
-  .map, .telephone, .adress{
-    width: 100%;
-  }
+    .map, .telephone, .adress{
+      width: 100%;
+    }
 
-  .telephone, .adress{
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-  }
+    .telephone, .adress{
+      display: flex;
+      justify-content: center;
+      font-size: 1rem;
+    }
 
-  .map iframe{
-    height: 400px;
-  }
+    .map iframe{
+      height: 400px;
+    }
 
-  .titre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0 0 0;
-  }
-  #titre-desktop{
-    display: flex;
-  }
+    .titre{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0 0 0;
+    }
+    #titre-desktop{
+      display: flex;
+    }
 
-  .image{
-    display: none;
-  }
+    .image{
+      display: none;
+    }
 
-  .bloc-rs{
-    display: none;
+    .bloc-rs{
+      display: none;
+    }
   }
-}
