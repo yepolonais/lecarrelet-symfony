@@ -118,7 +118,9 @@ label{
 }
 
 .bloc-bas{
-  display: none;
+  position: absolute;
+  left: 100%;
+  opacity: 0;
 }
 .fa-star, .fa-star-half{
   color: #ED8A19;
@@ -189,7 +191,9 @@ label{
   }
 
   .bloc-bas{
-    padding: 0;
+    position: inherit;
+    opacity: 1;
+    padding: 1% 0;
   }
   .google{
     display: flex;
