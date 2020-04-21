@@ -19,7 +19,9 @@
           </div>
           <h3 id="reserve-rappel">Merci ! On vous rappelle bientôt !</h3>
           <h3 id="reserve-contact">Merci pour votre réservation !</h3>
+
           <h3 id="sous-titre">Préparez vos soirées sur Bordeaux</h3>
+
           <div class="boutons">
             <button id="btn-fb" type="button" class="btn btn-lg btn-block">Via Facebook</button>
             <button id="btn-mail" type="button" class="btn btn-lg btn-block">Via email</button>
@@ -33,11 +35,11 @@
             <button id="rappel-validation" type="button" class="btn btn-block confirmation">Me rappeler</button>
           </form>
           <form class="contact" method="get">
+
             <select class="bouton type-evenement" name="type-evenement">
-              <option value="">Type d'évènement</option>
-              <option value="mixologie">Mixologie</option>
-              <option value="evg-evjf">EVG / EVJF</option>
-              <option value="team-building">Team Building</option>
+              {% for evenement in evenements  %}
+              <option value="{{ evenement.titre }}">{{ evenement.titre }}</option>
+              {% endfor %}
             </select>
             <select class="bouton nombre-personne" name="nombre-personne">
               <option value="">Nombre de personnes</option>
