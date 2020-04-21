@@ -43,7 +43,11 @@
 >>>>>>> update
 =======
 /*  margin: 0px 0 0 0; */
+=======
+/*  margin: 0px 0 0 0; */
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
+>>>>>>> 231ed398938b477d0a1a2ede8eef76bea01fc2e1
   display: flex;
   flex-direction: column;
 }
@@ -120,7 +124,10 @@ label{
 <<<<<<< HEAD
 >>>>>>> update
 =======
+=======
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
+>>>>>>> 231ed398938b477d0a1a2ede8eef76bea01fc2e1
 
 #reserve-contact, #reserve-rappel{
   margin: 5%;
@@ -150,6 +157,8 @@ label{
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
+>>>>>>> 231ed398938b477d0a1a2ede8eef76bea01fc2e1
 .bloc-gauche{
   margin-top: 60px;
 }
@@ -158,7 +167,12 @@ label{
 }
 >>>>>>> update
 =======
+=======
+>>>>>>> rebase
+=======
 >>>>>>> update
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
+>>>>>>> 231ed398938b477d0a1a2ede8eef76bea01fc2e1
 
 /*
  * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
@@ -248,8 +262,8 @@ label{
 
   .boutons{
 <<<<<<< HEAD
-<<<<<<< HEAD
   /*margin: 40px 0 20px 0;*/
+<<<<<<< HEAD
   /*margin: 40px 0 20px 0;*/
 >>>>>>> rebase
 >>>>>>> update
@@ -259,6 +273,11 @@ label{
 =======
   /*margin: 40px 0 20px 0;*/
 >>>>>>> update
+=======
+  /*margin: 40px 0 20px 0;*/
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
+>>>>>>> 231ed398938b477d0a1a2ede8eef76bea01fc2e1
   }
 
   .boutons button{

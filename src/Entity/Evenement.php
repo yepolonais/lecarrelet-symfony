@@ -67,7 +67,6 @@ class Evenement
 
     public function getFin(): ?\DateTimeInterface
     {
-<<<<<<< HEAD
         if($this->fin == null)
         {
             return $this->getDebut();
@@ -76,9 +75,7 @@ class Evenement
         {
             return $this->fin;
         }
-=======
-        return $this->fin;
->>>>>>> update
+>>>>>>> 231ed398938b477d0a1a2ede8eef76bea01fc2e1
     }
 
     public function setFin(?\DateTimeInterface $fin): self

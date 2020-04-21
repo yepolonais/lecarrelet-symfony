@@ -19,11 +19,15 @@ class EvenementRepository extends ServiceEntityRepository
         parent::__construct($registry, Evenement::class);
     }
 
-<<<<<<< HEAD
 
 
 =======
->>>>>>> update
+
+
+=======
+>>>>>>> 9a58dae86fa3114c66ca6117e6345a87ee25cb6e
+>>>>>>> 1fb247451777bc689c7844855d028420d7c41e77
+>>>>>>> 231ed398938b477d0a1a2ede8eef76bea01fc2e1
     // /**
     //  * @return Evenement[] Returns an array of Evenement objects
     //  */
