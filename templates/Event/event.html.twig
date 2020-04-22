@@ -76,10 +76,9 @@
 
               <div class="col-md-5 event-image d-none d-md-block">
                 <div class="event-filter h-100 d-flex justify-content-center align-items-end">
-                  <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
-                    <!-- <p class="text-center text-uppercase">réserver</p> -->
-                    réserver
-                  </button>
+                  <form method="get" action="{{ path('form') }}">
+                    <input type="submit" name ="{{ evenement.titre }}" value="RESERVER" class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                  </form>
                 </div>
               </div>
             </div>

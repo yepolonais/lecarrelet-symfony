@@ -1,0 +1,9 @@
+easy_admin:
+  entities:
+    Evenement:
+      class: App\Entity\Evenement
+      list:
+          fields:
+              - { property: 'titre' }
+              - { property: 'debut', label: 'Date début évènement' }
+              - { property: 'labelThumbnail',label: 'Aperçu photo' }
