@@ -76,19 +76,23 @@
 
               <div class="col-md-5 event-image d-none d-md-block">
                 <div class="event-filter h-100 d-flex justify-content-center align-items-end">
-                  <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
-                    <!-- <p class="text-center text-uppercase">réserver</p> -->
-                    réserver
-                  </button>
+                  <a class="event-a" href="{{ path('form', {'id':evenement.titre}) }}">
+                    <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                      <!-- <p class="text-center text-uppercase">réserver</p> -->
+                      réserver
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="row">
               <div class="event-cta-mobile col d-md-none d-flex justify-content-center align-items-center">
-                <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
-                réserver
-                </button>
+                <a href="{{ path('form', {'id':evenement.titre}) }}">
+                  <button type="button" class="event-bouton-mobile btn w-100 text-center text-uppercase">
+                  réserver
+                  </button>
+                </a>
               </div>
             </div>
           </article>

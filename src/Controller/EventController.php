@@ -21,5 +21,4 @@ class EventController extends AbstractController
             'controller_name' => 'EventController',
         ]);
     }
-
 }

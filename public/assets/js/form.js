@@ -1,5 +1,34 @@
 $( function() {
 
+   let url = window.location.search;
+   let idUrl = url.substr(4);
+   let urlDecode = decodeURI(idUrl);
+   let dataOption = document.getElementById("evenementOption").dataset.optionval;
+   console.log(dataOption);
+   console.log(urlDecode);
+   if(idUrl.length > 0)
+  {
+     $("#evenementOption").text(urlDecode);
+     dataOption = urlDecode;
+  }
+  console.log(dataOption);
+
+  let classEvent = document.getElementsByClassName("optionEvent");
+  console.log(classEvent);
+
+ for(i = 0; i< classEvent.length;i++)
+ {
+   if(classEvent[i].value === dataOption){
+     console.log("ce sont les mêmes donc on supprime");
+     classEvent[i].style.display = "none";
+   }
+   else{
+     console.log("ce ne sont pas les mêmes donc on affiche");
+   }
+   console.log(classEvent[i].value);
+ }
+
+
   $( "#contact-datepicker" ).datepicker();
 
 // affichage des blocs de formulaire

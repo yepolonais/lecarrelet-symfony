@@ -120,6 +120,10 @@
 .event-filter{
   background: rgba(0, 0, 0, 0.5);
 }
+
+.event-a{
+  width: 90%;
+}
 .event-cta{
   width: 90%;
   height: 2em;

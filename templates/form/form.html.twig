@@ -37,8 +37,12 @@
           <form class="contact" method="get">
 
             <select class="bouton type-evenement" name="type-evenement">
+              <option id="evenementOption" data-optionval="1" value="">-- Type Évènement-- </option>
+              <option value="mixologie">Mixologie</option>
+              <option value="evjf">EVJF</option>
+              <option value="evg">EVG</option>
               {% for evenement in evenements  %}
-              <option value="{{ evenement.titre }}">{{ evenement.titre }}</option>
+              <option class="optionEvent" value="{{ evenement.titre }}">{{ evenement.titre }}</option>
               {% endfor %}
             </select>
             <select class="bouton nombre-personne" name="nombre-personne">
