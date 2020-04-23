@@ -1,0 +1,9 @@
+easy_admin:
+  entities:
+    Galerie:
+      class: App\Entity\Galerie
+      list:
+          fields:
+              - { property: 'labelThumbnail', label: 'Aperçu photo' }
+              - { property: 'titre' }
+              - { property: 'datepublication', label: 'Date de publication' }
