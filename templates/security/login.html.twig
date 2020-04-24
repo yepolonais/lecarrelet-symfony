@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Se connecter{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+    <div class="container mt-4 login-container">
+
+        {% if error %}
+            <div class="alert alert-danger">
+            {{ error.messageKey | trans(error.messagedata, "security") }}
+            </div>
+        {% endif %}
+        <form action="{{ path('login') }}" method="post">
+            <div class="form-group">
+                <input type="text" id="username" name="_username" class="form-control" values{{ lastUsername }} placeholder="Identifiant">
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" name="_password" class="form-control" placeholder="Mot de passe">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+        </form>
+    </div>
+
+{% endblock %}

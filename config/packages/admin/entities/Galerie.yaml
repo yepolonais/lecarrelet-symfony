@@ -2,8 +2,25 @@ easy_admin:
   entities:
     Galerie:
       class: App\Entity\Galerie
+
       list:
           fields:
-              - { property: 'labelThumbnail', label: 'Aperçu photo' }
               - { property: 'titre' }
               - { property: 'datepublication', label: 'Date de publication' }
+              - { property: 'filename', label: 'Aperçu Photo', type: 'image' }
+
+      form:
+          fields:
+              - { property: 'titre' }
+              - { property: 'datepublication' }
+              - { property: 'file', label: 'Upload Photo', type: 'file' }
+
+      # form:
+      #           fields: [{ property: 'file', type: 'file' }]
+      # form:
+      #     fields: ['titre','datepublication','filename',{ property: 'file', type: 'file' }]
+      # new:
+      #     fields: ['titre', { property: 'web_view', type: 'image', label: 'Thumbnail'}, 'filename']
+          
+
+
