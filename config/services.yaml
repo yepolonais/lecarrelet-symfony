@@ -4,7 +4,8 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    app.path.product_images: /assets/img/Galerie
+    app.path.images_galerie: /assets/img/galerie
+    app.path.images_event: /assets/img/event
 
 services:
     # default configuration for services in *this* file

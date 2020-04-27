@@ -5,5 +5,14 @@ easy_admin:
       list:
           fields:
               - { property: 'titre' }
-              - { property: 'debut', label: 'Date début évènement' }
-              - { property: 'labelThumbnail',label: 'Aperçu photo' }
+              # - { property: 'updatedAt', label: 'Date de publication' }
+              - { property: 'image', label: 'Aperçu Photo', type: 'image', base_path: '%app.path.images_galerie%' }
+      show:
+          fields:
+              - { property: 'image', type: 'image', base_path: '%app.path.images_galerie%' }
+
+      form:
+          fields:
+              - { property: 'titre' }
+              # - { property: 'updatedAt', label: 'Date de publication' }
+              - { property: 'imageFile', type: 'vich_image' }

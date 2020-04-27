@@ -7,10 +7,10 @@ easy_admin:
           fields:
               - { property: 'titre' }
               # - { property: 'updatedAt', label: 'Date de publication' }
-              - { property: 'image', label: 'Aperçu Photo', type: 'image', base_path: '%app.path.product_images%' }
+              - { property: 'image', label: 'Aperçu Photo', type: 'image', base_path: '%app.path.images_galerie%' }
       show:
           fields:
-              - { property: 'image', type: 'image', base_path: '%app.path.product_images%' }
+              - { property: 'image', type: 'image', base_path: '%app.path.images_galerie%' }
 
       form:
           fields:
