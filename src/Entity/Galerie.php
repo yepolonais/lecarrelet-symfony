@@ -56,13 +56,12 @@ class Galerie
     */
    private $imageFile;
 
-   // /**
-   //  * @ORM\Column(type="datetime")
-   //  * @var \DateTime
-   //  */
-   // private $updatedAt;
+   /**
+    * @ORM\Column(type="datetime")
+    * @var \DateTime
+    */
+   private $updated;
 
-   // ...
 
    public function setImageFile(File $image = null)
    {
@@ -71,15 +70,25 @@ class Galerie
        // VERY IMPORTANT:
        // It is required that at least one field changes if you are using Doctrine,
        // otherwise the event listeners won't be called and the file is lost
-       // if ($image) {
-       //     // if 'updatedAt' is not defined in your entity, use another property
-       //     $this->updatedAt = new \DateTime('now');
-       // }
+       if ($image) {
+           // if 'updatedAt' is not defined in your entity, use another property
+           $this->updated = new \DateTime('now');
+       }
    }
 
    public function getImageFile()
    {
        return $this->imageFile;
+   }
+
+   public function getUpdated()
+   {
+       return $this->updated;
+   }
+
+   public function setUpdated($updated)
+   {
+       $this->image = $updated;
    }
 
    public function setImage($image)
