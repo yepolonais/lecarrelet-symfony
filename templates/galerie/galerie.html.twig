@@ -46,7 +46,7 @@
 
         <div class="col col-md-8 slider-principal  owl-carousel owl-theme">
           {% for galerie in photos %}
-            <img src="{{ asset(galerie.urlphoto) }}" alt="{{ galerie.titre }}">
+            <img src="{{ asset(galerie.image) }}" alt="{{ galerie.titre }}">
           {% endfor %}
         </div>
 

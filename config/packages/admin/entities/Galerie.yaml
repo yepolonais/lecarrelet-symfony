@@ -15,4 +15,5 @@ easy_admin:
       form:
           fields:
               - { property: 'titre' }
+              - { property: 'updatedAt', label: 'Date de publication' }
               - { property: 'imageFile', type: 'vich_image' }
