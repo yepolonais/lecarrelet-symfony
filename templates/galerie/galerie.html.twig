@@ -46,8 +46,10 @@
 
         <div class="col col-md-8 slider-principal  owl-carousel owl-theme">
           {% for galerie in photos %}
-            <img src="{{ asset(galerie.image) }}" alt="{{ galerie.titre }}">
+            <img src="{{ asset('assets/img/Galerie/' ~  galerie.image) }}" alt="{{ galerie.titre }}">
+
           {% endfor %}
+          <!-- <img src="{{ asset('assets/img/Galerie/event.jpg') }}"> -->
         </div>
 
         <div class="col-2 fleche-droite d-none d-md-flex justify-content-center align-items-center">

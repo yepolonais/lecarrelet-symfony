@@ -6,7 +6,7 @@ easy_admin:
       list:
           fields:
               - { property: 'titre' }
-              - { property: 'updatedAt', label: 'Date de publication' }
+              # - { property: 'updatedAt', label: 'Date de publication' }
               - { property: 'image', label: 'Aperçu Photo', type: 'image', base_path: '%app.path.product_images%' }
       show:
           fields:
@@ -15,5 +15,5 @@ easy_admin:
       form:
           fields:
               - { property: 'titre' }
-              - { property: 'updatedAt', label: 'Date de publication' }
+              # - { property: 'updatedAt', label: 'Date de publication' }
               - { property: 'imageFile', type: 'vich_image' }
