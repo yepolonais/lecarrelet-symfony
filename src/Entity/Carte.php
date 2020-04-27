@@ -42,12 +42,12 @@ class Carte
     private $prix2;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="string", nullable=true)
      */
     private $quantite1;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="string", nullable=true)
      */
     private $quantite2;
 
@@ -123,24 +123,24 @@ class Carte
         return $this;
     }
 
-    public function getQuantite1(): ?int
+    public function getQuantite1(): ?string
     {
         return $this->quantite1;
     }
 
-    public function setQuantite1(?int $quantite1): self
+    public function setQuantite1(?string $quantite1): self
     {
         $this->quantite1 = $quantite1;
 
         return $this;
     }
 
-    public function getQuantite2(): ?int
+    public function getQuantite2(): ?string
     {
         return $this->quantite2;
     }
 
-    public function setQuantite2(?int $quantite2): self
+    public function setQuantite2(?string $quantite2): self
     {
         $this->quantite2 = $quantite2;
 

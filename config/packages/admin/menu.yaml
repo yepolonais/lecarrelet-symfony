@@ -5,4 +5,10 @@ easy_admin:
               icon: 'cog'
               children:
                   - { entity: 'Evenement', icon: 'calendar-alt', label: 'Liste des évènements'}
+<<<<<<< HEAD
                   - { entity: 'Galerie', icon: 'images', label: 'Photos de la galerie'}
+=======
+                  - { entity: 'Galerie', icon: 'images', label: 'La galerie'}
+                  - { entity: 'Carte', icon: 'images', label: 'La Carte'}
+
+>>>>>>> Carte Jason

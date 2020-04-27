@@ -1,0 +1,14 @@
+easy_admin:
+  entities:
+    Carte:
+      class: App\Entity\Carte
+      list:
+          fields:
+              - { property: 'categorie' }
+              - { property: 'souscategorie' }
+              - { property: 'titre' }
+              - { property: 'prix1' }
+              - { property: 'prix2' }
+              - { property: 'quantite1' }
+              - { property: 'quantite1' }
+              - { property: 'description' }

@@ -16,9 +16,22 @@ class CarteController extends AbstractController
      */
     public function index(CarteRepository $response)
     {
-        $carte = $response->findAll();
+        $cocktail = $response->findBy(array("categorie" => "cocktails"));
+        $biere = $response->findBy(array("categorie" => "bieres"));
+        $vin = $response->findBy(array("categorie" => "vins"));
+        $shooter = $response->findBy(array("categorie" => "shooters"));
+        $tapa = $response->findBy(array("categorie" => "tapas"));
+        $bocalPlat = $response->findBy(array("souscategorie" => "plats"));
+        $bocalFormule = $response->findBy(array("souscategorie" => "Formule"));
         return $this->render('carte/carte.html.twig', [
-            'carte' => $carte,
+            'cokctails' => $cocktail,
+            'bieres' => $biere,
+            'vins' => $vin,
+            'shooters' => $shooter,
+            'tapas' => $tapa,
+            'plats' => $bocalPlat,
+            'Formule' => $bocalFormule
         ]);
     }
+
 }
