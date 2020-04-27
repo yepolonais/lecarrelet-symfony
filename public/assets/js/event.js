@@ -3,7 +3,7 @@ let moisAnnee =["janvier","février","mars","avril","mai","juin","juillet","aout
 $(function()
 {
 //Version  desktop et mobile
-  $(".event-mois a, .event-mois-mobile option").click(async function()
+  $(".event-mois a, .event-mois-mobile option").click(function()
   {
     //console.log(this.text);
     let moisChoisi = this.text.toLowerCase();//retourne le mois que l'on clique
@@ -14,27 +14,6 @@ $(function()
     let maListe = document.getElementsByClassName("event-item"); //retourne une liste de tous les events
     // console.log(Number(maListe[0].dataset.debutmois), Number(maListe[0].dataset.finmois));
     console.log(maListe);
-
-
-    let boucle = await function(){
-      let i = 0;
-      while(i < maListe.length)
-      {
-        let debutEvent = Number(maListe[i].dataset.debutmois);
-        let finEvent = Number(maListe[i].dataset.finmois);
-
-        //console.log(maListe[i].dataset.filter);
-        if (debutEvent <= moisChiffre && finEvent >= moisChiffre )
-        {
-          maListe[i].style.opacity = 1;
-        }
-        else
-        {
-          maListe[i].style.opacity = 0;
-        }
-        i++;
-      }
-    }();
 
     let boucle = function(){
       let i = 0;

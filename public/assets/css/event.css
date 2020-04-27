@@ -111,23 +111,24 @@
 
 
 .event-image{
-  background:  url('../img/event.jpg');
+  /* background:  url('../img/event.jpg'); */
   background-size: cover;
   background-position: center;
   font-family: var(--CL_bold);
   padding:0;
 }
 .event-filter{
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .event-a{
   width: 90%;
+  display: contents;
 }
 .event-cta{
   width: 90%;
   height: 2em;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   color : var(--Orange);
   font-size:1rem;
   margin-bottom: 10px;

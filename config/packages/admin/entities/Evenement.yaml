@@ -1,18 +1,30 @@
 easy_admin:
   entities:
     Evenement:
+      label: Liste des événements
       class: App\Entity\Evenement
       list:
           fields:
               - { property: 'titre' }
               # - { property: 'updatedAt', label: 'Date de publication' }
-              - { property: 'image', label: 'Aperçu Photo', type: 'image', base_path: '%app.path.images_galerie%' }
+              - { property: 'debut', label: 'début', type: 'datetime' }
+              - { property: 'fin', label: 'fin' }
+              - { property: 'description', label: "Description" }
+              - { property: 'image', label: 'Aperçu Photo', type: 'image', base_path: '%app.path.images_event%' }
       show:
           fields:
-              - { property: 'image', type: 'image', base_path: '%app.path.images_galerie%' }
+              - { property: 'titre' }
+              # - { property: 'updatedAt', label: 'Date de publication' }
+              - { property: 'debut', label: 'début'}
+              - { property: 'fin', label: 'fin' }
+              - { property: 'description', label: "Description" }
+              - { property: 'image', label: 'Aperçu Photo', type: 'image', base_path: '%app.path.images_event%' }
 
       form:
           fields:
               - { property: 'titre' }
               # - { property: 'updatedAt', label: 'Date de publication' }
+              - { property: 'debut', label: 'début'}
+              - { property: 'fin', label: 'fin' }
+              - { property: 'description', label: "Description" }
               - { property: 'imageFile', type: 'vich_image' }

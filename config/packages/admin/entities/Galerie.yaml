@@ -2,6 +2,7 @@ easy_admin:
   entities:
     Galerie:
       class: App\Entity\Galerie
+      label: Photos de la galerie
 
       list:
           fields:
