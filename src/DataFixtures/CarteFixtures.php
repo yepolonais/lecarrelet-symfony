@@ -307,6 +307,73 @@ class CarteFixtures extends Fixture
             ->setDescription("Gin HTK - Vodka Russian standard - Rhum Havana 3' - Tequila Jose cuervo especial - Cointreau - citron pressé - Coca");
         $manager->persist($item27);
 
+        $item28 = new Carte();
+        $item28->setCategorie("bieres")
+            ->setSouscategorie("lespressions")
+            ->setTitre("Le Carrelet")
+            ->setPrix1(3.5)
+            ->setPrix2(6)
+            ->setQuantite1(25)
+            ->setQuantite2(50)
+            ->setDescription("");
+        $manager->persist($item28);
+
+        $item29 = new Carte();
+        $item29->setCategorie("bieres")
+            ->setSouscategorie("lespressions")
+            ->setTitre("Le Goudale")
+            ->setPrix1(4.5)
+            ->setPrix2(8)
+            ->setQuantite1(25)
+            ->setQuantite2(50)
+            ->setDescription("");
+        $manager->persist($item29);
+
+        $item30 = new Carte();
+        $item30->setCategorie("bieres")
+            ->setSouscategorie("lespressions")
+            ->setTitre("La Silly blanche")
+            ->setPrix1(4.5)
+            ->setPrix2(0)
+            ->setQuantite1(25)
+            ->setQuantite2(0)
+            ->setDescription("");
+        $manager->persist($item30);
+
+        $item31 = new Carte();
+        $item31->setCategorie("bieres")
+            ->setSouscategorie("lespressions")
+            ->setTitre("La Queue de Charrue ambrée")
+            ->setPrix1(5.5)
+            ->setPrix2(0)
+            ->setQuantite1(33)
+            ->setQuantite2(0)
+            ->setDescription("");
+        $manager->persist($item31);
+
+        $item32 = new Carte();
+        $item32->setCategorie("bieres")
+            ->setSouscategorie("lespressions")
+            ->setTitre("La Grisette fruits des bois")
+            ->setPrix1(6)
+            ->setPrix2(0)
+            ->setQuantite1(33)
+            ->setQuantite2(0)
+            ->setDescription("");
+        $manager->persist($item32);
+
+        $item33 = new Carte();
+        $item33->setCategorie("bieres")
+            ->setSouscategorie("lespressions")
+            ->setTitre("La Desperados")
+            ->setPrix1(6)
+            ->setPrix2(0)
+            ->setQuantite1(33)
+            ->setQuantite2(0)
+            ->setDescription("");
+        $manager->persist($item33);
+
+
         $manager->flush();
     }
 }

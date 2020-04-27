@@ -18,5 +18,4 @@ class CarteRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Carte::class);
     }
-
 }

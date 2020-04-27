@@ -14,8 +14,9 @@ class CarteController extends AbstractController
      * @param CarteRepository $carte
      * @return Response
      */
-    public function index(CarteRepository $carte)
+    public function index(CarteRepository $response)
     {
+        $carte = $response->findAll();
         return $this->render('carte/carte.html.twig', [
             'carte' => $carte,
         ]);
