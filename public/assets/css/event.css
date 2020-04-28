@@ -53,7 +53,7 @@
 .event-mois a{
   font-family: var(--CL);
   color: var(--Blanc);
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-bottom: 2px solid black;
   padding-bottom: 0.2em;
 
@@ -71,6 +71,10 @@
   font-family: var(--CL);
   font-size: 1.3rem;
   color:var(--Noir);
+}
+
+#mois-tous{
+  color:var(--Orange);
 }
 
 /*
@@ -108,7 +112,7 @@
 .event-texte {
   font-family: var(--CL_bold);
   color: var(--Blanc);
-  font-size:0.6rem;
+  font-size:0.7rem;
   min-height: 8em;
 }
 
@@ -177,6 +181,18 @@
   @media (max-width: 768px) {
     .event-item{
       max-width: 100%;
+    }
+    .event-contenu{
+      background: rgba(0,0,0,0.7);
+    }
+    .event-titre-h3>h3{
+      color: var(--Blanc);
+    }
+    .event-contenu h2{
+      font-size: 2rem;
+    }
+    .event-contenu h3, .event-texte{
+      font-size: 1rem;
     }
 }
   @media (min-width: 768px) {

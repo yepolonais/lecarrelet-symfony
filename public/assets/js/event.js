@@ -23,7 +23,7 @@ $(function()
         let finEvent = Number(maListe[i].dataset.finmois);
 
         //console.log(maListe[i].dataset.filter);
-        if (debutEvent <= moisChiffre && finEvent >= moisChiffre )
+        if ((debutEvent <= moisChiffre && finEvent >= moisChiffre)||(moisChoisi === "tous"))
         {
           maListe[i].style.display = "block";
         }

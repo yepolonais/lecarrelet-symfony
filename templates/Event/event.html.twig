@@ -33,6 +33,7 @@
             <li class="align-self-center flex-fill text-center"><a href="#">Octobre</a></li>
             <li class="align-self-center flex-fill text-center"><a href="#">Novembre</a></li>
             <li class="align-self-center flex-fill text-center"><a href="#">Décembre</a></li>
+            <li class="align-self-center flex-fill text-center"><a href="#" id="mois-tous">Tous</a></li>
           </ul>
         </div>
       </div>
@@ -52,6 +53,7 @@
       <option value="">Octobre</option>
       <option value="">Novembre</option>
       <option value="">Décembre</option>
+      <option value="">Tous</option>
     </select>
   </section>
 
@@ -62,28 +64,28 @@
           {% for evenement in evenements %}
           <article class="event-item container border border-white" data-debutmois="{{ evenement.debut| date('m') }}" data-finmois="{{ evenement.fin| date('m') }}">
             <div class="row" style="background-image: url({{ asset('assets/img/event/' ~  evenement.image) }})">
-              <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
-                <div class="event-titre-h2 d-flex justify-content-center align-content-center">
-                  <h2 class="text-center">{{ evenement.titre }}</h2>
+                <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
+                  <div class="event-titre-h2 d-flex justify-content-center align-content-center">
+                    <h2 class="text-center">{{ evenement.titre }}</h2>
+                  </div>
+                  <div class="event-titre-h3 d-flex justify-content-center align-content-center">
+                    <h3 class="text-center">{{ evenement.debut| date('d/m/Y') }} au {{ evenement.fin | date('d/m/Y') }} </h2>
+                  </div>
+                  <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
+                  <p>{{ evenement.description }}</p>
+                  </div>
                 </div>
-                <div class="event-titre-h3 d-flex justify-content-center align-content-center">
-                  <h3 class="text-center">{{ evenement.debut| date('d/m/Y') }} au {{ evenement.fin | date('d/m/Y') }} </h2>
-                </div>
-                <div class="event-texte d-flex flex-column justify-content-center align-content-center text-center">
-                <p>{{ evenement.description }}</p>
-                </div>
-              </div>
 
-              <div class="col-md-5 event-image d-none d-md-block" style="background-image: url({{ asset('assets/img/event/' ~  evenement.image) }}) ">
-                <div class="event-filter h-100 d-flex justify-content-center align-items-end">
-                  <a class="event-a" href="{{ path('form', {'id':evenement.titre}) }}">
-                    <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
-                      <!-- <p class="text-center text-uppercase">réserver</p> -->
-                      réserver
-                    </button>
-                  </a>
+                <div class="col-md-5 event-image d-none d-md-block" style="background-image: url({{ asset('assets/img/event/' ~  evenement.image) }}) ">
+                  <div class="event-filter h-100 d-flex justify-content-center align-items-end">
+                    <a class="event-a" href="{{ path('form', {'id':evenement.titre}) }}">
+                      <button class="event-cta border border-white d-flex justify-content-center align-items-center text-center text-uppercase">
+                        <!-- <p class="text-center text-uppercase">réserver</p> -->
+                        réserver
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
             </div>
 
             <div class="row">
