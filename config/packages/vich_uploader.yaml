@@ -1,0 +1,10 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings: #mapping utilisé par vich pour définir où les photos sont uploadées
+        images_galerie:
+            uri_prefix:         '%app.path.images_galerie%'
+            upload_destination: '%kernel.project_dir%/public%app.path.images_galerie%'
+        images_event:
+            uri_prefix:         '%app.path.images_event%'
+            upload_destination: '%kernel.project_dir%/public%app.path.images_event%'

@@ -162,6 +162,9 @@ html{
     .navbar-brand{
       margin-left: 0.5rem;
     }
+    .navbar-toggler{
+      outline: 1px dotted !important;
+    }
     .lien-menu, #telephone-menu{
       font-size: 1.6rem;
     }

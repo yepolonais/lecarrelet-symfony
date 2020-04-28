@@ -51,7 +51,7 @@ main{
 .owl-carousel img{
   max-width:100%;
   height: 100%;
-  object-fit: cover; /*permet de récréer l'effet cover de background-image */
+  object-fit: contain; /*permet de récréer l'effet contain de background-image */
   border: 2px solid #8252ee;
   box-shadow: 0px 0px 5px 3px #8252ee;
 }

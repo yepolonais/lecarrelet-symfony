@@ -5,5 +5,4 @@ easy_admin:
               icon: 'cog'
               children:
                   - { entity: 'Evenement', icon: 'calendar-alt', label: 'Liste des évènements'}
-                  - { entity: 'Galerie', icon: 'images', label: 'La galerie'}
-            
+                  - { entity: 'Galerie', icon: 'images', label: 'Photos de la galerie'}

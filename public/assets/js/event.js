@@ -15,26 +15,31 @@ $(function()
     // console.log(Number(maListe[0].dataset.debutmois), Number(maListe[0].dataset.finmois));
     console.log(maListe);
 
-    let i = 0;
-    while(i < maListe.length)
-    {
-      let debutEvent = Number(maListe[i].dataset.debutmois);
-      let finEvent = Number(maListe[i].dataset.finmois);
+    let boucle = function(){
+      let i = 0;
+      while(i < maListe.length)
+      {
+        let debutEvent = Number(maListe[i].dataset.debutmois);
+        let finEvent = Number(maListe[i].dataset.finmois);
 
-      //console.log(maListe[i].dataset.filter);
-      if (debutEvent <= moisChiffre && finEvent >= moisChiffre )
-      {
-        maListe[i].style.display = "block";
+        //console.log(maListe[i].dataset.filter);
+        if ((debutEvent <= moisChiffre && finEvent >= moisChiffre)||(moisChoisi === "tous"))
+        {
+          maListe[i].style.display = "block";
+        }
+        else
+        {
+          maListe[i].style.display = "none";
+        }
+        i++;
       }
-      else
-      {
-        maListe[i].style.display = "none";
-      }
-      i++;
-    }
+    }();
+
+
+
   });
   $("#eventAll").click(function(){
-    
+
   });
 });
 //Cette fonction de tri des event fonctionne avec l'attribut data-{filter} propre au HTML5.
