@@ -61,7 +61,7 @@
 
           {% for evenement in evenements %}
           <article class="event-item container border border-white" data-debutmois="{{ evenement.debut| date('m') }}" data-finmois="{{ evenement.fin| date('m') }}">
-            <div class="row">
+            <div class="row" style="background-image: url({{ asset('assets/img/event/' ~  evenement.image) }})">
               <div class="event-contenu col-xs-12 col-md-7 h-100 d-flex flex-column ">
                 <div class="event-titre-h2 d-flex justify-content-center align-content-center">
                   <h2 class="text-center">{{ evenement.titre }}</h2>

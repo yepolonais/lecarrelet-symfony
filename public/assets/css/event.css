@@ -86,6 +86,10 @@
   max-width: 45%;
   margin-bottom : 25px;
 }
+.event-item > .row{
+  background-size: cover;
+  background-position: center;
+}
 .event-contenu{
   padding:20px;
 }
@@ -173,5 +177,10 @@
   @media (max-width: 768px) {
     .event-item{
       max-width: 100%;
+    }
+}
+  @media (min-width: 768px) {
+    .event-item > .row{
+      background-image: none !important;
     }
 }
