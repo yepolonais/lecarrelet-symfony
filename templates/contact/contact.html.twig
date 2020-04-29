@@ -3,7 +3,7 @@
 {% block title %}Contact{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('assets/css/form.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}" />
 {% endblock %}
 {% block body %}
 
@@ -28,46 +28,57 @@
             <button id="btn-tel" type="button" class="btn btn-lg btn-block">On vous rappelle</button>
           </div>
 
-          {{ form(contactForm) }}
+          <div class="rappel" method="get">
+            {{ form_start(rappelForm) }}
+              <div class="form-group">
+                {{ form_widget(rappelForm.nom)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(rappelForm.prenom)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(rappelForm.telephone)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(rappelForm.message)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(rappelForm.envoyer)}}
+              </div>
+            {{ form_end(rappelForm) }}
+          </div>
 
-
-          <form class="rappel" method="get">
-            <input id="rappel-nom" class="bouton" type="text" name="nom" placeholder="Nom">
-            <input id="rappel-prenom" class="bouton" type="text" name="prenom" placeholder="Prénom">
-            <input id="rappel-numtelephone" class="bouton" type="number" name="telephone" placeholder="Téléphone">
-            <textarea id="rappel-demande" class="bouton" name="demande" rows="1" cols="30" placeholder="Votre demande"></textarea>
-            <button id="rappel-validation" type="button" class="btn btn-block confirmation">Me rappeler</button>
-          </form>
-          <form class="contact" method="get">
-
+          <div class="contact" method="get">
+            {{ form_start(contactForm) }}
+            <div class="form-group">
+              {{ form_widget(contactForm.event)}}
+            </div>
+              <div class="form-group">
+                {{ form_widget(contactForm.personnes)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(contactForm.nom)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(contactForm.prenom)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(contactForm.email)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(contactForm.message)}}
+              </div>
+              <div class="form-group">
+                {{ form_widget(contactForm.envoyer)}}
+              </div>
+            {{ form_end(contactForm) }}
             <select class="bouton type-evenement" name="type-evenement">
               <option id="evenementOption" data-optionval="1" value="">-- Type Évènement-- </option>
-              <option value="mixologie">Mixologie</option>
-              <option value="evjf">EVJF</option>
-              <option value="evg">EVG</option>
               {% for evenement in evenements  %}
               <option class="optionEvent" value="{{ evenement.titre }}">{{ evenement.titre }}</option>
               {% endfor %}
             </select>
-            <select class="bouton nombre-personne" name="nombre-personne">
-              <option value="">Nombre de personnes</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5 et plus">5 et plus</option>
-              <option value="10 et plus">10 et plus</option>
-              <option value="20 et plus">20 et plus</option>
-            </select>
-            <label for="datepicker">Date :
-            <input id="contact-datepicker" type="datetime" name="datepicker" class="far fa-calendar-alt"></label>
-            <input id="contact-nom" class="bouton" type="text" name="nom" placeholder="Nom">
-            <input id="contact-prenom" class="bouton" type="text" name="prenom" placeholder="Prénom">
-            <input id="contact-email" class="bouton" type="email" name="email" placeholder="Adresse mail">
-            <input id="contact-numtelephone" class="bouton" type="number" name="telephone" placeholder="Téléphone">
-            <textarea id="contact-demande" class="bouton" name="demande" rows="1" cols="30" placeholder="Votre demande"></textarea>
-            <button id="contact-validation" type="button" class="btn btn-block confirmation">Réserver</button>
-          </form>
+          </div>
         </div>
         <div class="bloc-bas">
           <h3>Ils parlent de nous</h2>
@@ -163,6 +174,6 @@
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('assets/js/form.js') }}"></script>
+    <script src="{{ asset('assets/js/contact.js') }}"></script>
     <script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
 {% endblock %}

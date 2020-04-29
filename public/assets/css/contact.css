@@ -1,0 +1,302 @@
+/*
+ * Variables couleurs
+ */
+:root{
+    --Bleue: #3A5893;
+}
+
+/*
+ * GENERAL
+ */
+ h1{
+    color: white;
+    font-family: var(--Mountecarlo);
+    /* font-size: 3em; */
+    margin: 20px 0 0 20px;
+ }
+  h2,h3{
+    color: white;
+    display: none;
+  }
+ h2{
+   font-size: 2rem;
+   font-family: var(--Thrasher);
+ }
+ h3{
+   font-size: 2em;
+   font-family: var(--Mountecarlo);
+ }
+
+.coordonnes, .coordonnes a, p{
+  color: white;
+}
+
+.btn
+{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.boutons{
+/*  margin: 0px 0 0 0; */
+  display: flex;
+  flex-direction: column;
+}
+
+#contact_envoyer, #rappel_envoyer{
+  background-color: var(--Orange);
+  border: 2px solid white;
+  color: white;
+}
+
+.type-evenement{
+  display: none;
+}
+
+/*
+ *  3 boutons principaux
+ */
+
+#btn-fb{
+  background-color: var(--Bleue);
+  border: 2px solid white;
+}
+#btn-mail, .confirmation{
+  background-color: var(--Orange);
+  border: 2px solid white;
+  color: white;
+}
+#btn-tel{
+  background-color: var(--Noir);
+  border: 2px solid white;
+}
+
+/*
+ * Blocs cachés qui coulissent avec le jquery
+ */
+
+.rappel, .contact{
+  margin: 40px auto 20px auto;
+  position: absolute;
+  right: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact *, .rappel *{
+  margin: 10px auto 10px auto;
+  text-align: center;
+}
+
+#contact-datepicker
+{
+  width: 50%;
+}
+label{
+  color: white;
+}
+
+.bouton{
+  width: 80%;
+}
+
+/*
+ * coordonnes
+ */
+
+.adress{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-tel, .icon-adress{
+    padding-right: 60px;
+}
+
+.map{
+  margin: 5% 0 0 0;
+}
+
+.map iframe{
+  width: 100%;
+  border: 1px solid white;
+}
+
+
+#reserve-contact, #reserve-rappel{
+  margin: 5%;
+}
+
+.bloc-bas{
+  position: absolute;
+  left: 100%;
+  opacity: 0;
+}
+.fa-star, .fa-star-half{
+  color: #ED8A19;
+  padding-left: 10px;
+  line-height: inherit !important;
+}
+.titre{
+  text-align: center;
+}
+
+.retour{
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+}
+
+#reserve-rappel, #reserve-contact{
+  display: none;
+}
+.bloc-gauche{
+  margin-top: 60px;
+}
+.facebook, .instagram{
+  width: 3rem;
+}
+
+/*
+ * FORMAT MOBILE SCINDÉ EN DEUX BLOCS COTE A COTE
+ */
+@media screen and (min-width: 768px) {
+
+  h1{
+    display: none;
+  }
+  h2, h3{
+    display: inherit;
+  }
+  h3{
+    font-size: 1rem;
+  }
+
+  .bloc-formulaire{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .bloc-gauche{
+    width: 50%;
+    padding: 0 1%;
+    background-image: url(images/_2041960.jpg);
+    background-size: cover;
+  }
+
+  .bloc-gauche, .coordonnes{
+    margin-top: 80px;
+  }
+
+  .bloc-haut, .bloc-bas{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bloc-haut{
+    margin-bottom: 1%;
+  }
+
+  .bloc-bas{
+    position: inherit;
+    opacity: 1;
+    padding: 1% 0;
+  }
+
+  .bloc-bas h3{
+    margin-bottom: 0;
+  }
+
+  .google{
+    display: flex;
+    padding: 5px 0;
+  }
+
+  .retour{
+    margin-right: 20px;
+    position: absolute;
+    right: 100%
+  }
+
+  #btn-fb:hover{
+    background-color: white;
+    color: var(--Bleue);
+    border: 2px solid var(--Bleue);
+  }
+  #btn-mail:hover, .confirmation:hover{
+    background-color: white;
+    border: 2px solid var(--Orange);
+    color: var(--Orange);
+  }
+  #btn-tel:hover{
+    background-color: white;
+    color: var(--Noir);
+    border: 2px solid var(--Noir);
+  }
+
+  .reseaux-Soc{
+    display: flex;
+  }
+
+  .coordonnes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    padding: 0;
+  }
+
+  .boutons{
+  /*margin: 40px 0 20px 0;*/
+  }
+
+  .boutons button{
+    margin-bottom: 0.5rem;
+  }
+
+
+  .map, .telephone, .adress{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .telephone, .adress{
+    display: flex;
+    justify-content: center;
+  }
+
+  .map iframe{
+    height: 400px;
+  }
+
+  .titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titre h2{
+    padding-top: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .coordonnes h2{
+    padding-top: 0.5rem;
+  }
+
+  .google p{
+    font-size: 1rem;
+  }
+
+  #sous-titre{
+    font-size: 1rem;
+  }
+}

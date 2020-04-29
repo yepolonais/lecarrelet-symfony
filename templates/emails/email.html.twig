@@ -1,5 +1,14 @@
-<h1>Nouveau contact</h1>
-<p>Prénom: {{ contact.prenom }}</p>
-<p>Nom: {{ contact.nom }}</p>
-<p>Email: {{ contact.email }}</p>
-<p>Message: {{ contact.message|raw }}</p>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Demande de réservation</h1>
+    <p>Type d'évènement: {{ contact.event }}</p>
+    <p>Nombre de personne: {{ contact.personnes }}</p>
+    <p>Prénom: {{ contact.prenom }}</p>
+    <p>Nom: {{ contact.nom }}</p>
+    <p>Email: {{ contact.email }}</p>
+    <p>Message: {{ contact.message|raw }}</p>
+  </body>
+</html>
