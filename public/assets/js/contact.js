@@ -1,49 +1,49 @@
 $( function() {
-
-   let url = window.location.search;
-   let idUrl = url.substr(4);
-   let urlDecode = decodeURI(idUrl);
-   let dataOption = document.getElementById("evenementOption").dataset.optionval;
-   console.log(dataOption);
-   console.log(urlDecode);
-   if(idUrl.length > 0)
-  {
-     $("#evenementOption").text(urlDecode);
-     dataOption = urlDecode;
-  }
-  console.log(dataOption);
-
-  let classEvent = document.getElementsByClassName("optionEvent");
-  console.log(typeof classEvent);
-  let contactEvent = document.getElementById("contact_event");
-  let firstelement = contactEvent[Object.keys(contactEvent)[0]];
-  // console.log(firstelement.text);
-
- for(i = 0; i< classEvent.length;i++)
- {
-   let option = document.createElement("option");
-   if(classEvent[i].value === dataOption){
-     console.log("ce sont les mêmes donc on supprime");
-     // on remplit la value de l'option du formulaire symf par la value du formulaire form
-     option.appendChild(document.createTextNode(classEvent[i].value));
-     //console.log(option.value);
-     firstelement.text = option.value;
-     //contactEvent.appendChild(option);
-
-     // formulaire contact
-
-     // firstelement.selected = "selected";
-     // classEvent[i].style.display = "none";
-   }
-   else{
-     console.log("ce ne sont pas les mêmes donc on affiche");
-     option.appendChild(document.createTextNode(classEvent[i].value));
-     console.log(option.value);
-     contactEvent.appendChild(option);
-   }
-   console.log(classEvent[i].value);
- }
-
+// RECUPERER VIA JS LES EVENEMENTS
+ //   let url = window.location.search;
+ //   let idUrl = url.substr(4);
+ //   let urlDecode = decodeURI(idUrl);
+ //   let dataOption = document.getElementById("evenementOption").dataset.optionval;
+ //   console.log(dataOption);
+ //   console.log(urlDecode);
+ //   if(idUrl.length > 0)
+ //  {
+ //     $("#evenementOption").text(urlDecode);
+ //     dataOption = urlDecode;
+ //  }
+ //  console.log(dataOption);
+ //
+ //  let classEvent = document.getElementsByClassName("optionEvent");
+ //  console.log(typeof classEvent);
+ //  let contactEvent = document.getElementById("contact_event");
+ //  let firstelement = contactEvent[Object.keys(contactEvent)[0]];
+ //  // console.log(firstelement.text);
+ //
+ // for(i = 0; i< classEvent.length;i++)
+ // {
+ //   let option = document.createElement("option");
+ //   if(classEvent[i].value === dataOption){
+ //     console.log("ce sont les mêmes donc on supprime");
+ //     // on remplit la value de l'option du formulaire symf par la value du formulaire form
+ //     option.appendChild(document.createTextNode(classEvent[i].value));
+ //     //console.log(option.value);
+ //     firstelement.text = option.value;
+ //     //contactEvent.appendChild(option);
+ //
+ //     // formulaire contact
+ //
+ //     // firstelement.selected = "selected";
+ //     // classEvent[i].style.display = "none";
+ //   }
+ //   else{
+ //     console.log("ce ne sont pas les mêmes donc on affiche");
+ //     option.appendChild(document.createTextNode(classEvent[i].value));
+ //     console.log(option.value);
+ //     contactEvent.appendChild(option);
+ //   }
+ //   console.log(classEvent[i].value);
+ // }
+// JUSQU'ICI POUR RECUPERER VIA JS LES EVENEMENTS
 
  // let contactEventArray = contactEvent.value;
  // console.log(contactEventArray);

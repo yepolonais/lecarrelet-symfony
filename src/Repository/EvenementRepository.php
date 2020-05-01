@@ -48,4 +48,9 @@ class EvenementRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    // public function createOptionsQueryBuilder($value): ?Evenement
+    // {
+    //     return $this->createQueryBuilder($value);
+    // }
 }

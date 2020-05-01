@@ -10,25 +10,36 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\FormEvent;
+use Symfony\Component\Form\FormEvents;
 use App\Entity\Evenement;
 use App\Repository\EvenementRepository;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 class ContactType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-       // $evenements = $response->findAll();
+
+        // $evenements = $response->findBy(array("titre" == "mixologie"));
       //  'evenements'=>$evenements
+      $evenementsPerso = ["a","b","c",10,25,32];
         $builder
-            ->add('event', ChoiceType::class
-             , [
-               'choices' => [
-                 'type d\'évènement'=> "soiree",
-                 'mixologie'=> "Mixologie",
-                'evjf'=> "EVJF",
-                'EVG'=> "EVG",
-                 ]
-               ]
+            ->add('event', EntityType::class, [
+              'class' => 'App\Entity\Evenement',
+              'placeholder' => 'Type d\'évènement',
+              'mapped' => false,
+            ]
+            // ChoiceType::class
+             //, [
+               //'choices' =>
+               // [
+               //  'type d\'évènement'=> "soiree",
+               //  'mixologie'=> "Mixologie",
+               //  'evjf'=> "EVJF",
+               //  'EVG'=> "EVG",
+               //   ]
+               //]
             )
             ->add('personnes', ChoiceType::class
             , [
@@ -90,6 +101,29 @@ class ContactType extends AbstractType
             ]
             )
         ;
+        $builder->addEventListener(FormEvents::POST_SET_DATA, function (FormEvent $event) {
+          $evenements = $event->getData();
+          if($evenements){
+            $formOptions = $event->getForm();
+            $formOptions->add('evenements', EntityType::class,[
+              'class' => 'App\Entity\Evenement',
+              'placeholder' => 'type evenement',
+              'choices' => $formOptions->getData()->getTitre(),
+              ]
+            );
+          }
+    // ... add a choice list of friends of the current application user
+
+        });
+          // [
+                   // 'class' => Evenement::class,
+                   // 'choice_label' => 'type evenement',
+                   // 'query_builder' => function (EvenementRepository $evenementRepository) use ($evenements) {
+                   //     // call a method on your repository that returns the query builder
+                   //     return $userRepository->createOptionsQueryBuilder($user);
+                   // },
+          //      ];
+      //});
     }
 
     public function configureOptions(OptionsResolver $resolver)
