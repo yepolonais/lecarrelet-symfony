@@ -18,6 +18,7 @@
     font-family: "Thrasher";
     color: white;
     font-size: 1.1rem;
+    text-decoration: none;
 }
 .card-header {
     text-align: center;
@@ -74,4 +75,10 @@ td {
 }
 .sous-titre {
     font-family: "CLitalic", sans-serif;
+}
+.btn-link:hover{
+    text-decoration:none;
+}
+.btn-link:focus{
+    text-decoration:none;
 }
