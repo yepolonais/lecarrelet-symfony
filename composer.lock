@@ -7148,8 +7148,6 @@
                 "Fixture",
                 "persistence"
             ],
-<<<<<<< HEAD
-=======
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -7164,7 +7162,6 @@
                     "type": "tidelift"
                 }
             ],
->>>>>>> jason
             "time": "2020-04-02T16:40:37+00:00"
         },
         {
