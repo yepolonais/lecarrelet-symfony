@@ -59,10 +59,6 @@
   text-align: center;
   font-size: 0.8rem;
 }
-
-
-
-
 .event-cta-mobile{
   height: 10vh;
   background: var(--Orange);
@@ -78,6 +74,7 @@
 .event-bouton-mobile:hover{
   color : var(--Blanc);
 }
+
 /*
  * Première page fin
  */
@@ -165,3 +162,46 @@
   }
 
 }
+
+
+  /*
+   * Animation logo
+   */
+/* Il est nécessaire de déterminer le centre du path que l'on anime et de l'indiquer dans transform-origin. Pour cela on utilise un script js, ou l'on applique la méthode js getBBox() au path choisi. On obtient ainsi (x,y,width,height) du path. On obtient (x,y) du centre du path en ajoutant respectivement à x et y (retournés par getBBox) la moitié de la valeur du width et du height*/
+#Group_1{
+    animation-name: rotationLogo;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    /* Things added */
+    animation-iteration-count: infinite;
+    transform: translate(320.999px, 677.459px) rotate(0deg);
+    transform-origin: 135.7871px 138.9375px;
+    /* display: inline-block; */
+    /* <--- */
+}
+ @keyframes rotationLogo {
+    100% {
+      transform: translate(320.999px, 677.459px) rotate(360deg);
+    }
+}
+#Group_2{
+    animation-name: ckw;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    /* Things added */
+    animation-iteration-count: infinite;
+    transform: translate(322.017px, 676px) rotate(0deg);
+    transform-origin: 136.943px 140px;
+    /* display: inline-block; */
+    /* <--- */
+}
+ @keyframes ckw {
+    100% {
+      transform: translate(322.017px, 676px) rotate(-360deg);
+    }
+}
+
+
+  /*
+   * Fin animation logo
+   */
