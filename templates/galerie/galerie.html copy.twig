@@ -4,7 +4,6 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('assets/carousel/dist/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/galerie.css') }}" />
 {% endblock %}
 
@@ -22,7 +21,7 @@
     <section class="slider container-fluid">
       <div class="row slider-image flex-nowrap">
 
-        <div class="col-2 fleche-gauche d-none d-md-flex justify-content-center align-items-center ">
+        <div class="col-2 fleche-gauche d-none d-md-flex justify-content-center align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 110 109.909">
             <defs>
               <filter id="fleche_precedent" x="0" y="0" width="110" height="109.909" filterUnits="userSpaceOnUse">
@@ -42,13 +41,16 @@
               </g>
             </g>
           </svg>
+
         </div>
 
-        <div class="col col-md-8 slider-principal  owl-carousel owl-theme">
+        <div class="col-8 slider-principal w-100 h-100 owl-carousel owl-theme" id="photo-centre">
           {% for galerie in photos %}
-            <img src="{{ asset('assets/img/galerie/' ~  galerie.image) }}" alt="{{ galerie.titre }}">
-          {% endfor %}
+            <img src="{{ galerie.urlphoto }}" alt="{{ galerie.titre }}">
+          {% endfor %} 
         </div>
+
+        
 
         <div class="col-2 fleche-droite d-none d-md-flex justify-content-center align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 110 109.909">
@@ -88,6 +90,4 @@
 
 {% block javascripts %}
   {{ parent() }}
-  <script src="{{ asset('assets/carousel/dist/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('assets/js/galerie.js') }}"></script>
 {% endblock %}
