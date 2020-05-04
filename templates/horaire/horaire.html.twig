@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos horaires{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/horaire.css') }}" />
+{% endblock %}
+
+{% block body %}
+<div class="container horaire-container">
+    <h1 class="horaire-titreH">Le carrelet - Bar à cocktails</h1>
+    <h2 class="horaire-titreH">Horaires d'ouverture: </h2>
+
+    {% for lundi in lundis %}
+        <div class="jour">Lundi: {{ lundi.heures }} </div>
+    {% endfor %}
+    {% for mardi in mardis %}
+        <div class="jour">Mardi: {{ mardi.heures }} </div>
+    {% endfor %}
+    {% for mercredi in mercredis %}
+        <div class="jour">Mercredi: {{ mercredi.heures }} </div>
+    {% endfor %}
+    {% for jeudi in jeudis %}
+        <div class="jour">Jeudi: {{ jeudi.heures }} </div>
+    {% endfor %}
+    {% for vendredi in vendredis %}
+        <div class="jour">Vendredi: {{ vendredi.heures }} </div>
+    {% endfor %}
+    {% for samedi in samedis %}
+        <div class="jour">Samedi: {{ samedi.heures }} </div>
+    {% endfor %}
+    {% for dimanche in dimanches %}
+        <div class="jour">Dimanche: {{ dimanche.heures }} </div>
+    {% endfor %}
+
+</div>
+{% endblock %}

@@ -4,7 +4,7 @@ easy_admin:
       label: Liste des événements
       class: App\Entity\Evenement
       list:
-          fields:
+        fields:
               - { property: 'titre' }
               # - { property: 'updatedAt', label: 'Date de publication' }
               - { property: 'debut', label: 'début', type: 'datetime' }

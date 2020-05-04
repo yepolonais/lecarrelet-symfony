@@ -76,9 +76,7 @@ td {
 .sous-titre {
     font-family: "CLitalic", sans-serif;
 }
-.btn-link:hover{
-    text-decoration:none;
-}
-.btn-link:focus{
-    text-decoration:none;
+
+.btn-link:focus,.btn-link:hover{
+    text-decoration: none;
 }

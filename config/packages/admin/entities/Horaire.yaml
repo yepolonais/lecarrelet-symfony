@@ -1,0 +1,13 @@
+easy_admin:
+  entities:
+    Horaire:
+      class: App\Entity\Horaire
+      form:
+          fields:
+              - { property: 'jour' }
+              - { property: 'heures' }
+
+      list:
+          fields:
+              - { property: 'jour' }
+              - { property: 'heures' }

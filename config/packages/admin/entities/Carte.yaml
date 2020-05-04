@@ -2,9 +2,9 @@ easy_admin:
   entities:
     Carte:
       class: App\Entity\Carte
-      list:
+      form:
           fields:
-              - { property: 'categorie' }
+              - { property: 'categorie',  dql_filter: 'Carte.categorie'}
               - { property: 'souscategorie' }
               - { property: 'titre' }
               - { property: 'prix1' }
@@ -12,3 +12,9 @@ easy_admin:
               - { property: 'quantite1' }
               - { property: 'quantite1' }
               - { property: 'description' }
+      list:
+          fields:
+              - { property: 'categorie' }
+              - { property: 'souscategorie' }
+              - { property: 'titre' }
+
