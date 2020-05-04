@@ -40,10 +40,10 @@
                                     <table>
                                         <tbody>
                                             <tr>
-                                                {% if biere.quantite1 != null %}
+                                                {% if biere.quantite1 != 0 %}
                                                 <td class="quantite">{{ biere.quantite1 }}cl</td>
                                                 {% endif %}
-                                                {% if biere.quantite2 != null %}
+                                                {% if biere.quantite2 != 0 %}
                                                 <td class="quantite">{{ biere.quantite2 }}cl</td>
                                                 {% endif %}
                                             </tr>
