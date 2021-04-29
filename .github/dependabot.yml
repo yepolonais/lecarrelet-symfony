@@ -1,0 +1,39 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: symfony/string
+    versions:
+    - 5.2.2
+    - 5.2.3
+    - 5.2.4
+  - dependency-name: symfony/web-link
+    versions:
+    - 5.2.2
+    - 5.2.3
+    - 5.2.4
+  - dependency-name: symfony/notifier
+    versions:
+    - 5.2.1
+    - 5.2.2
+    - 5.2.3
+  - dependency-name: symfony/asset
+    versions:
+    - 5.2.2
+    - 5.2.3
+  - dependency-name: symfony/intl
+    versions:
+    - 5.2.2
+    - 5.2.3
+  - dependency-name: symfony/http-foundation
+    versions:
+    - 5.2.2
+    - 5.2.3
+  - dependency-name: symfony/expression-language
+    versions:
+    - 5.2.2
+    - 5.2.3
