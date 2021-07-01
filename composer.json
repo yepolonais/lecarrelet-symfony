@@ -29,7 +29,7 @@
         "symfony/profiler-pack": "*",
         "symfony/security-bundle": "5.0.*",
         "symfony/serializer-pack": "*",
-        "symfony/string": "5.0.*",
+        "symfony/string": "5.3.*",
         "symfony/translation": "5.0.*",
         "symfony/twig-pack": "^1.0",
         "symfony/validator": "5.0.*",
